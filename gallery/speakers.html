@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="speakers.css" >
+    <link rel="stylesheet" href="jquery.flipster.min.css" >
+</head>
+<body>
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+                <li><div class="contint">
+                    <img src="https://pyxis.nymag.com/v1/imgs/691/d80/b7cb68034693ae005b109d89c619cf5edc-vladimir-putin.rsquare.w700.jpg">
+                    <div> Putin <br>President of Russia </div>
+                </div></li>
+                <li><div class="contint">
+                    <img src="https://pyxis.nymag.com/v1/imgs/691/d80/b7cb68034693ae005b109d89c619cf5edc-vladimir-putin.rsquare.w700.jpg">
+                    <div> Putin <br>President of Russia  </div>
+                </div></li>
+                <li><div class="contint">
+                    <img src="https://pyxis.nymag.com/v1/imgs/691/d80/b7cb68034693ae005b109d89c619cf5edc-vladimir-putin.rsquare.w700.jpg">
+                    <div> Putin <br>President of Russia </div>
+                </div></li>
+                <li><div class="contint">
+                    <img src="https://pyxis.nymag.com/v1/imgs/691/d80/b7cb68034693ae005b109d89c619cf5edc-vladimir-putin.rsquare.w700.jpg">
+                    <div> Putin <br>President of Russia  </div>
+                </div></li>
+                
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.27
+        });
+    </script>
+    
+</body>
+</html>
