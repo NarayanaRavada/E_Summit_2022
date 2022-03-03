@@ -277,13 +277,16 @@ body::-webkit-scrollbar {
 }
 
 .events {
-	height: 100vh;
+	position: relative;
 	width: 100vw;
-	padding-top: 5rem;
+	padding-top: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .speakers {
-	padding: 10rem;
+	padding-top: 10rem;
 	width: 100vw;
-	height: 100vh;
 }

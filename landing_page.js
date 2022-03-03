@@ -44,10 +44,15 @@ document.querySelector(".intro").addEventListener("mousemove", (e) => {
 	}
 });
 
-/*Loader*
- * document.querySelector("#loader").style.display = "visible";
-document.querySelector("body").style.visibility = "hidden";
-setTimeout(() => {
-	document.querySelector("#loader").style.display = "none";
-	document.querySelector("body").style.visibility = "visible";
-}, 2000);*/
+
+window.addEventListener('scroll', (e) => {
+	console.log(e);
+	if(window.scrollY > document.body.offsetHeight - window.innerHeight*3/2) {
+		setTimeout(() =>
+		{
+		document.getElementById('navigation').classList.add('active');
+		document.getElementById('toggle').classList.add('active');
+		document.getElementById('sec').classList.add('active');
+		}, 8000);
+	}
+});

@@ -1,6 +1,9 @@
 .content {
 	width: 100vw;
-	display: flex;
+}
+
+.context {
+	z-index: 5;
 }
 
 .context h1{
@@ -11,7 +14,7 @@
 
 .context h4{
     text-align: center;
-    color: #fff;
+    color: #aaa;
     font-size: 25px;
 }
 
@@ -19,7 +22,7 @@
 	width: 70vw;
 	text-align: justify;
     font-size: 20px;
-	color: #fff;
+	color: #bbb;
 }
 
 .circles{
@@ -135,4 +138,10 @@
         border-radius: 50%;
     }
 
+}
+
+@media only screen and (max-width: 580px) {
+	.context h4 {
+		font-size: 1.2rem;
+	}
 }
