@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 }
 
 .intro {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	background: url("images/bg.jpg");
 	background-size: cover;
@@ -140,11 +140,11 @@ body::-webkit-scrollbar {
 
 @keyframes oscillate {
 	0%,100% {
-		margin-left: -6rem;
+		margin-left: -4.5rem;
 		opacity: 1;
 	}
 	50% {
-		margin-left: 6rem;
+		margin-left: 4.7rem;
 		opacity: 0.9;
 	}
 }
