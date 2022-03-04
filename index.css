@@ -7,6 +7,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	background-color: #030C18;
 	overflow-x: hidden;
+	user-select: none;
 	/* background-color: #920A82; */
 }
 
