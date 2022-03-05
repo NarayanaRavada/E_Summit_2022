@@ -45,8 +45,7 @@ document.querySelector(".intro").addEventListener("mousemove", (e) => {
 });
 
 
-window.addEventListener('scroll', (e) => {
-	console.log(e);
+window.addEventListener('scroll', () => {
 	if(window.scrollY > document.body.offsetHeight - window.innerHeight*3/2) {
 		setTimeout(() =>
 		{
