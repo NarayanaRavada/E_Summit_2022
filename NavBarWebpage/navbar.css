@@ -39,30 +39,13 @@ header #toggle {
   margin: 1.5rem;
   margin-right: -2.5rem;
 }
-/*header #toggle:before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-}
 
-header #toggle:after {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-}*/
-
-svg{
+#toggle {
   transform: translate(-50%, -50%) scaleX(1.2);
   cursor: pointer;
 }
 
-svg path{
+#toggle path{
   stroke-width: 30;
   stroke-linecap: round;
   stroke: #fff;
@@ -83,31 +66,17 @@ svg path{
 
 /* In cross form */
 
-.active .top_bar,
-.active .bottom_bar{
+#toggle.active .top_bar,
+#toggle.active .bottom_bar{
   stroke-dashoffset: -650px;
   stroke: #000;
 }
 
-.active .middle_bar{
+#toggle.active .middle_bar{
   stroke-dasharray: 0px 220px;
   stroke-dashoffset: -120px;
   stroke: #000;
 }
-
-/*.banner.active header #toggle:before {
-  top: 50%;
-  left: 50%;
-  background-color: #000;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.banner.active header #toggle:after {
-  top: 50%;
-  left: 50%;
-  background-color: #000;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}*/
 
 .banner {
   position: absolute;

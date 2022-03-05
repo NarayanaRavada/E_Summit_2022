@@ -27,6 +27,7 @@
 
 .circles{
     position: absolute;
+	display: none;
     top: 100vh;
     left: 0;
     width: 100%;
