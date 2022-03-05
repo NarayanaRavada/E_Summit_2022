@@ -321,6 +321,16 @@ body::-webkit-scrollbar {
 	}
 }
 
+h1 {
+	color: #40c3ff;
+}
+
+h1::after {
+	content: "";
+	width: 100%;
+	background-color: #fff;
+}
+
 .about {
 	width: 100vw;
 	height: 100vh;
