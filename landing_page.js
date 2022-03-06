@@ -45,7 +45,6 @@ document.querySelector(".intro").addEventListener("mousemove", (e) => {
 	}
 });
 
-
 window.addEventListener('scroll', () => {
 	if( (!isToggled) && window.scrollY > document.body.offsetHeight - window.innerHeight*3/2) {
 		isToggled = true;

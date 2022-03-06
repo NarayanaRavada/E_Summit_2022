@@ -4,6 +4,7 @@
 
 .context {
 	padding: 5rem;
+	padding-bottom: 3rem;
 	z-index: 5;
 	background: rgba(0, 0, 0, 0.4);
 }

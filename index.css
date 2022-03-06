@@ -11,7 +11,6 @@ body {
 	font-family: "Open Sans", sans-serif;
 	background-color: #030C18;
 	overflow-x: hidden;
-	user-select: none;
 	/* background-color: #920A82; */
 }
 
@@ -40,6 +39,7 @@ body::-webkit-scrollbar {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	user-select: none;
 }
 
 .contents {
@@ -319,15 +319,23 @@ body::-webkit-scrollbar {
 	.stone {
 		width: 2px;
 	}
+	.about .context {
+		width: 100vw;
+		height: 100vh;
+		margin-top: 3rem;
+	}
 }
 
-h1 {
+.title {
+	text-align: center;
+	font-size: 50px;
 	color: #40c3ff;
+	width: auto;
 }
 
-h1::after {
+.title::after {
 	content: "";
-	width: 100%;
+	width: auto;
 	background-color: #fff;
 }
 
@@ -337,19 +345,25 @@ h1::after {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 
 .events {
-	position: relative;
 	width: 100vw;
-	padding-top: 10rem;
+	height: auto;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
+	margin-top: 5rem;
 }
 
 .speakers {
 	padding-top: 10rem;
 	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
