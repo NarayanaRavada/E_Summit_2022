@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  z-index: 14;
+  transition: 0.6s;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  margin: 1rem;
+}
+
+header .logo img {
+  max-width: 40px;
+  filter: invert(1);
+}
+
+header .logo img:hover {
+  filter: invert(1) brightness(1000%);
+}
+
+header #toggle {
+  position: relative;
+  height: 60px;
+  cursor: pointer;
+  margin: 1.5rem;
+  margin-right: -2.5rem;
+}
+
+#toggle {
+  transform: translate(-50%, -50%) scaleX(1.2);
+  cursor: pointer;
+}
+
+#toggle path{
+  stroke-width: 30;
+  stroke-linecap: round;
+  stroke: #fff;
+  fill: none;
+  transition: all .5s ease-in-out;
+}
+
+/* In menu form */
+
+.top_bar,
+.bottom_bar{
+  stroke-dasharray: 240px 910px;
+}
+
+.middle_bar{
+  stroke-dasharray: 240px 240px;
+}
+
+/* In cross form */
+
+#toggle.active .top_bar,
+#toggle.active .bottom_bar{
+  stroke-dashoffset: -650px;
+  stroke: #000;
+}
+
+#toggle.active .middle_bar{
+  stroke-dasharray: 0px 220px;
+  stroke-dashoffset: -120px;
+  stroke: #000;
+}
+
+.banner {
+  position: absolute;
+  width: 100vw;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  transition: 0.5s;
+  z-index: 14;
+  overflow-x: hidden;
+}
+
+#navigation {
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 250px;
+  height: 100vh;
+  background: #40c3ff;
+  z-index: 13;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+#navigation.active {
+  right: 0;
+}
+
+#navigation ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#navigation ul li {
+  list-style: none;
+}
+
+#navigation ul li a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#navigation ul li a:hover {
+  filter: invert(1);
+}
+
+.sci {
+  margin-top: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.sci li {
+  list-style: none;
+  place-items: center;
+}
+
+.sci li a {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border: 1px;
+  margin: 10px 0 0;
+}
+
+.sci li a img {
+  max-width: 40px;
+  padding: 4px;
+  border: 3px solid #000;
+  border-radius: 8px;
+}
+
+.sci li a img:hover {
+  background-color: #fff;
+  filter: invert(1);
+}

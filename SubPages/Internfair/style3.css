@@ -1,0 +1,127 @@
+#heading {
+  color: aliceblue;
+  text-align: center;
+  font-size: 40px;
+  font-family: lato;
+}
+body {
+  background-color: #001540;
+}
+p {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 20px;
+  line-height: 1.5em;
+  font-size: 18px;
+  color: white;
+  font-family: lato;
+  word-spacing: 0.4em;
+}
+#css-table {
+  display: table;
+}
+#css-table .card {
+  display: table-cell;
+  /* width: 20%;
+  padding: 10px; */
+}
+.card {
+  width: 20%;
+  height: 220px;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+  margin: 2.3%;
+  /* height: calc(100vh / 2); */
+}
+#lastone {
+  height: 250px;
+}
+.col-container {
+  display: table;
+  width: 100%;
+}
+
+.des {
+  /* //padding: 3px; */
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.name {
+  margin-top: 25px;
+  color: white;
+  font-family: lato;
+  font-size: 22px;
+}
+.location {
+  margin-top: 0.2em;
+  color: white;
+  font-family: lato;
+  font-size: 20px;
+}
+.req {
+  margin-top: 1em;
+  margin-left: 0.4em;
+  color: white;
+  font-size: 14px;
+  font-family: lato;
+}
+button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  filter: invert();
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 85%;
+    margin-left: 7%;
+    align-items: center;
+  }
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
