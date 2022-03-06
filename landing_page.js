@@ -1,6 +1,7 @@
 var starry_background = document.querySelector(".starry_background");
 var w = window.innerWidth;
 var h = window.innerHeight;
+let isToggled = false;
 
 var star_count = (w / 1920) * 300;
 
@@ -46,7 +47,8 @@ document.querySelector(".intro").addEventListener("mousemove", (e) => {
 
 
 window.addEventListener('scroll', () => {
-	if(window.scrollY > document.body.offsetHeight - window.innerHeight*3/2) {
+	if( (!isToggled) && window.scrollY > document.body.offsetHeight - window.innerHeight*3/2) {
+		isToggled = true;
 		setTimeout(() =>
 		{
 		document.getElementById('navigation').classList.add('active');
