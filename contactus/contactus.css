@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* .page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://goo.gl/OeVhun) center no-repeat;
+  background-size: cover;
+} */
+
+.blur-it {
+  filter: blur(100);
+}
+
+.modal-wrapper {
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: block;
+  top: 0; 
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 25%;
+  height: 47%;
+  border-radius: 4%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: fit-content;
+  min-height: fit-content;
+  max-width: 400px;
+  max-height: 500px;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  opacity: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-wrapper.open .modal {
+  opacity: 1;
+}
+.headingcontactus {
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  background: #4c65d4;
+  align-items: center;
+}
+/* .headingcontactus .title{
+
+} */
+#closebtncontactus{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 20px;
+  height: 20px;
+}
+
+.contenth {
+  text-align: center;
+  overflow: scroll;
+  flex-grow: 10;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.good-job {
+  text-align: center;
+  font-family: 'Montserrat', Arial,       Helvetica, sans-serif;
+  color: #4c65d4;
+}
+.good-job .fa-thumbs-o-up {
+  font-size: 60px;
+}
+.good-job h1 {
+  font-size: 45px;
+}
+.contactelement {
+  display:block;
+  height: 60px;
+  text-align: center;
+}
+.contactelement h3{
+  color: black;
+  font-size: 18;
+}
+.contactelement h7{
+  color: blue;
+}
