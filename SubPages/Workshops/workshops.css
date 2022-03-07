@@ -129,7 +129,7 @@ h1 em {
   text-align: center;
   margin: auto;
   white-space: nowrap;
-  padding: 13px 0px 20px 13px;
+  padding: 13px px 20px 13px;
 }
 .wstitle h1:before {
   background-color: #291eb9;
@@ -145,11 +145,12 @@ h1 em {
   background-color: #4f58d1;
   content: "";
   display: block;
-  position: absolute;
-  right: -10%;
+  position: relative;
+  right: -20%;
   bottom: 0;
   height: 4px;
   width: 80%;
+  margin-top: 8px;
   margin-bottom: 0.25em;
 }
 #workshopscont{

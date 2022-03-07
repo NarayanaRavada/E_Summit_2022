@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esummit-Workshops</title>
+    <link rel="stylesheet" href="workshops.css" />
+    <link rel="stylesheet" href="/E_Summit_2022/Navigation/navbar.css">
+    <link rel="stylesheet" type="text/css" href="/E_Summit_2022/contactus/contactus.css" />
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo"
+                ><img src="/E_Summit_2022/images/logo-e-summit-new.png"
+            /></a>
+            <svg viewBox="0 0 800 600" id="toggle" onclick="toggle()">
+                <path
+                    d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                    class="top_bar"
+                />
+
+                <path d="M300,320 L540,320" class="middle_bar" />
+
+                <path
+                    d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                    class="bottom_bar"
+                    transform="translate(480, 320) scale(1, -1) translate(-480, -318)"
+                />
+            </svg>
+            <div class="modal-wrapper">
+                <div class="modal">
+                    <div class="headingcontactus">
+                        <div class="title">Contacts</div>
+                        <a class="trigger" href="#">
+                            <img
+                                src="../../images/red-x-10338.png"
+                                id="closebtncontactus"
+                            />
+                        </a>
+                    </div>
+                    <div class="contenth">
+                        <div class="contactelement">
+                            <h3>Sponsorship and Association</h3>
+                            <h7>Jaykar <br /> 91 86392 08292</h7>
+                        </div>
+                        <div class="contactelement">
+                            <h3>For Speaking Opportunities</h3>
+                            <h7>
+                                Bhanu <br />
+                                +91 76196 05060
+                            </h7>
+                        </div>
+                        <div class="contactelement">
+                            <h3>Registration</h3>
+                            <h7>
+                                Akash <br />
+                                 +91 80180 87510
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="../../contactus/contactus.js"></script>
+        </header>
+        <div id="navigation">
+            <ul>
+                <li><a href="/E_Summit_2022/index.html">Home</a></li>
+                <li><a href="/E_Summit_2022/index.html/#about">About</a></li>
+                <li><a href="/E_Summit_2022/index.html/#theme">Theme</a></li>
+                <li><a href="/E_Summit_2022/index.html/#speakers">Speakers</a></li>
+                <li><a href="/E_Summit_2022/index.html/#events">Events</a></li>
+                <li><a href="/E_Summit_2022/SubPages/Ourteam/index.html">Meet The Team </a></li>
+                <li><a class="btn trigger" href="#">Contact Us</a></li>
+                <ul class="sci">
+                    <li>
+                        <a href="#"><img src="../../images/facebook.png" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../../images/twitter.png" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../../images/linkedin.png" /></a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggle() {
+            var sec = document.getElementById("sec");
+            var nav = document.getElementById("navigation");
+            var tog_button = document.getElementById("toggle");
+            nav.classList.toggle("active");
+            sec.classList.toggle("active");
+            tog_button.classList.toggle("active");
+        }
+    </script>
+    <div class="wstitle">
+      <h1>Workshops</h1>
+    </div>
+
+    <div class="wsinfo">
+      <div class="entry-content"></div>
+      <p>
+        Workshops at E-Summit'21 aim to deliver numerous tips-and-tricks to the
+        attendees in order to achieve various creative, innovative and feasible
+        ideas from daily life problems. They broaden the understanding of
+        attendees of diverse aspects of entrepreneurship starting from idea
+        generation to idea commercialization. It also lays emphasis on how a
+        strong networking in the society/industry can help one to rise to a
+        sustainable business enterprise and help them market the product to a
+        much wider audience. The workshops stand with great benefits to the
+        attendees as they learn how to build a corporate identity and filter out
+        ideas for high growth entrepreneurship via various interactive sessions
+        in these workshops with many distinguished personalities.
+      </p>
+      <div class="entry-content"></div>
+    </div>
+    <div id="workshopscont">
+        <div class="box">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="mam.png" alt="images" />
+                </div>
+                <div class="details">
+                    <h2>Stock Marketing<br /><span></span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="mam.png" alt="images" />
+                </div>
+                <div class="details">
+                    <h2>Digital Marketing<br /><span></span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="mam.png" alt="images" />
+                </div>
+                <div class="details">
+                    <h2>Legal Aspects of Startups<br /><span></span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
