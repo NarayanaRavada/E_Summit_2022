@@ -45,14 +45,14 @@ document.querySelector(".intro").addEventListener("mousemove", (e) => {
 	}
 });
 
-window.addEventListener('scroll', () => {
-	if( (!isToggled) && window.scrollY > document.body.offsetHeight - window.innerHeight*3/2) {
-		isToggled = true;
-		setTimeout(() =>
-		{
-		document.getElementById('navigation').classList.add('active');
-		document.getElementById('toggle').classList.add('active');
-		document.getElementById('sec').classList.add('active');
-		}, 8000);
-	}
-});
+// window.addEventListener('scroll', () => {
+// 	if( (!isToggled) && window.scrollY > document.body.offsetHeight - window.innerHeight*3/2) {
+// 		isToggled = true;
+// 		setTimeout(() =>
+// 		{
+// 		document.getElementById('navigation').classList.add('active');
+// 		document.getElementById('toggle').classList.add('active');
+// 		document.getElementById('sec').classList.add('active');
+// 		}, 8000);
+// 	}
+// });
