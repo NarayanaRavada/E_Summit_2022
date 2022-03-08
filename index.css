@@ -234,15 +234,12 @@ body::-webkit-scrollbar {
 		font-size: 1rem;
 		margin-bottom: 10vh;
 	}
-	.starry_background {
-		display: none;
-	}
+	
 	.stone {
 		width: 2px;
 	}
 	.about .context {
 		width: 100vw;
-		height: 100vh;
 		margin-top: 3rem;
 	}
 }
@@ -262,7 +259,7 @@ body::-webkit-scrollbar {
 
 .about {
 	width: 100vw;
-	height: 100vh;
+	padding-bottom: 3rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
