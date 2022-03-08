@@ -181,8 +181,7 @@
 					future Industry leaders and Entrepreneurs to exercise their
 					skills.
 				</p>
-				<br />
-				<br />
+				<br>
 				<h4>"Where Investors Meets Innovators"</h4>
 			</div>
 			<div class="lines">
@@ -192,96 +191,15 @@
 			</div>
 		</div>
 
-		<link rel="stylesheet" href="ThemeESdesign.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<div class="outer" id="theme">
-			<video
-				loop
-				autoplay
-				id="abc"
-				muted
-				onmousemove="{playbtn.style.display='block'}"
-				onmousewheel="{playbtn.style.display='none'}"
-			>
-				<source src="./video/Themevideo.mp4" type="video/mp4" />
-			</video>
-			<div class="container" id="playbtn">
-				<!-- <i class="fas fa-play" onclick="{popupvidcontain.style.display='block'}"></i> -->
-				<i
-					onclick="{popupvidcontain.style.display='block'; playbtn.style.display='none'}"
-					><img
-						src="https://img.icons8.com/external-others-iconmarket/64/000000/external-play-essential-others-iconmarket-2.png"
-				/></i>
-			</div>
-			<div id="popupvidcontain">
-				<button onclick="closeiframe()" id="closeiframe">
-					<h1>X</h1>
-				</button>
-				<iframe
-					src="https://www.youtube.com/embed/wdkwt7zMJ6c"
-					frameborder="0"
-					allowfullscreen
-					id="yt_popvideo"
-				></iframe>
+		<link rel="stylesheet" href="./ThemeESdesign.css" >
+		<div class="theme" id="theme">
+			<div class="iframe-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/wdkwt7zMJ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
+		
 
-		<script>
-			// function vidoverhandler(){
-			//     console.log("sdasd");
-			//     let x=document.querySelector("#playbtn");
-			//     x.style.display="block";
-			// }
-
-			function closeiframe() {
-				popupvidcontain.style.display = "none";
-				yt_popvideo.autoplay = false;
-			}
-			var player;
-			function onYouTubeIframeAPIReady() {
-				console.log("apiready");
-				player = new YT.Player("yt_popvideo", {
-					events: {
-						onReady: onPlayerReady,
-						onStateChange: onPlayerStateChange,
-					},
-				});
-			}
-			function onPlayerReady(event) {
-				document.getElementById("yt_popvideo").style.borderColor =
-					"#FF6D00";
-				console.log("ready");
-			}
-			function changeBorderColor(playerStatus) {
-				var color;
-				if (playerStatus == -1) {
-					color = "#37474F"; // unstarted = gray
-				} else if (playerStatus == 0) {
-					color = "#FFFF00"; // ended = yellow
-				} else if (playerStatus == 1) {
-					color = "#33691E"; // playing = green
-				} else if (playerStatus == 2) {
-					color = "#DD2C00"; // paused = red
-				} else if (playerStatus == 3) {
-					color = "#AA00FF"; // buffering = purple
-				} else if (playerStatus == 5) {
-					color = "#FF6DOO"; // video cued = orange
-				}
-				if (color) {
-					document.getElementById("yt_popvideo").style.borderColor =
-						color;
-				}
-			}
-			function onPlayerStateChange(event) {
-				changeBorderColor(event.data);
-			}
-		</script>
+		
 
 		<!-- Events -->
 		<div class="events" id="events">
