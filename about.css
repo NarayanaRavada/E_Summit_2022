@@ -6,25 +6,25 @@
 	padding: 5rem;
 	padding-bottom: 3rem;
 	z-index: 5;
-	background: rgba(0, 0, 0, 0.4);
+	background: #210422;
 }
 
 .context h1 {
 	text-align: center;
-	font-size: 50px;
+	font-size: 2.5vw;
 }
 
 .context h4 {
 	text-align: center;
-	color: #ddd;
-	font-size: 25px;
+	color: #cfc5cf;
+	font-size: 2.5vw;
 }
 
 #about-info {
 	width: 70vw;
 	text-align: justify;
-	font-size: 20px;
-	color: #ccc;
+	font-size: 2vw;
+	color: #cfc5cf;
 }
 
 .lines {
