@@ -31,7 +31,6 @@ body::-webkit-scrollbar {
 .intro {
 	width: 100vw;
 	height: 100vh;
-	background: url("images/bg.jpg");
 	background-size: cover;
 	background-clip: fixed;
 	background-repeat: no-repeat;
@@ -51,7 +50,6 @@ body::-webkit-scrollbar {
 	width: 100vw;
 	height: 100vh;
 	z-index: 10;
-	background-color: rgba(0, 0, 0, 0.27);
 	overflow: hidden;
 	padding: 3rem;
 	padding-bottom: 20rem;
@@ -223,86 +221,8 @@ body::-webkit-scrollbar {
 .star {
 	position: absolute;
 	border-radius: 50%;
-	background: radial-gradient(#fff, #384ade);
 	box-shadow: 0 0 2px #384ade, 0 0 3px #384ade, 0 0 4px #384ade,
 		0 0 5px #384ade;
-}
-
-.commets {
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	z-index: 5;
-}
-
-.stone {
-	position: absolute;
-	width: 6px;
-	height: 140px;
-	background: linear-gradient(to top, #50d7fe, transparent);
-	top: 100px;
-	left: 100px;
-	border-radius: 50px;
-	animation: falling 7s ease 0s Infinite;
-	transform: translateY(-500%);
-}
-
-@keyframes falling {
-	from {
-		transform: translateY(-500%);
-		opacity: 1;
-	}
-	to {
-		transform: translateY(500%);
-		opacity: 0.1;
-	}
-}
-
-.stone:nth-child(2) {
-	top: 300px;
-	left: 400px;
-	animation-delay: 0.7s;
-	animation-duration: 6s;
-}
-.stone:nth-child(3) {
-	top: 500px;
-	left: 200px;
-	animation-delay: 0.5s;
-	animation-duration: 6s;
-}
-.stone:nth-child(4) {
-	top: 100px;
-	right: 100px;
-	left: inherit;
-	animation-delay: 0.3s;
-	animation-duration: 3s;
-}
-.stone:nth-child(5) {
-	top: 300px;
-	right: 400px;
-	left: inherit;
-	animation-delay: 0.8s;
-	animation-duration: 5s;
-}
-.stone:nth-child(6) {
-	top: 500px;
-	right: 200px;
-	left: inherit;
-	animation-delay: 0.9s;
-	animation-duration: 7s;
-}
-.stone:nth-child(7) {
-	top: 0;
-	animation-delay: 2s;
-	animation-duration: 6s;
-	left: 45%;
-}
-
-.stone:nth-child(even) {
-	background: linear-gradient(to top, #384fde, transparent);
-	box-shadow: 0 4px 94px #384fde;
 }
 
 @media only screen and (max-width: 600px) {
