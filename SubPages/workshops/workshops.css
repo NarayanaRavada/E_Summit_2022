@@ -3,13 +3,17 @@ body {
   color: aliceblue;
 }
 
-.box {
-  width: 1000px;
+#workshopscont {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  max-width: 100vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 15px;
   margin: 0 auto;
 }
+
 .card {
   position: relative;
   width: 300px;
@@ -153,17 +157,23 @@ h1 em {
   margin-top: 8px;
   margin-bottom: 0.25em;
 }
-#workshopscont{
-    display: flex;
-    margin: auto;
-    justify-content: space-evenly;
-    max-width: 1500px;
-}
-.wsinfo{
-    max-width: 800px;
-    margin: auto;
-}
-p { font-family: 'Inder', sans-serif; line-height: 28px; margin-bottom: 15px; color: #ebe7e6; }
 
+.wsinfo {
+  max-width: 800px;
+  margin: auto;
+}
+p {
+  font-family: "Inder", sans-serif;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: #ebe7e6;
+}
 
-.entry-content { border-bottom: 3px solid #666; padding: 0 0 15px 0; margin-bottom: 8px; width: 110%; position: relative; right: 5%;}
+.entry-content {
+  border-bottom: 3px solid #666;
+  padding: 0 0 15px 0;
+  margin-bottom: 8px;
+  width: 110%;
+  position: relative;
+  right: 5%;
+}
