@@ -31,8 +31,10 @@
 .eventcard .card .face.face1 {
 	position: relative;
 	background: #333;
-	background-color: #485461;
-	background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+	background-color: #485461;                                
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -47,12 +49,7 @@
 }
 
 .eventcard .card .face.face1 .content {
-	opacity: 0.8;
 	transition: 0.5s;
-}
-
-.eventcard .card:hover .face.face1 .content {
-	opacity: 1;
 }
 
 .eventcard .card:last-child img {
@@ -117,6 +114,7 @@
 	}
 	60% {
 		transform: translateY(10px) scale(0.9);
+		color: #111;
 	}
 	
 }
