@@ -1,7 +1,10 @@
 .events {
-	width: 100vw;
-	padding-top: 5rem;
+	padding: 20px;	
+	width: 80%;
 	background-color: #08042c;
+	padding-left: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .eventcard {
@@ -9,18 +12,19 @@
 	width: 80%;
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 350px);
+	grid-template-columns: repeat(auto-fit, 300px);
 	justify-content: center;
+	padding-left: 3rem;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-	padding-left: 1rem;
-	grid-row-gap: 1rem;  /* */
+	
+	
 }
 
 .eventcard .card {
 	position: relative;
 	cursor: pointer;
-	margin-left: 1rem;
+    margin: 1rem;	
 }
 
 .eventcard .card .face {
