@@ -31,9 +31,9 @@ body{
     transition: 0.5s;
 }
 
-.box:hover{
+/* .box:hover{
     height: 260px;;
-}
+} */
 .box .imgBx {
     position: absolute;
     top: 0;
