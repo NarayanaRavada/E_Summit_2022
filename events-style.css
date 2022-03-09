@@ -2,6 +2,7 @@
 	width: 100vw;
 	padding: 5rem;
 	background-color: #08042c;
+	overflow-x: hidden;
 }
 
 .events h1 {
