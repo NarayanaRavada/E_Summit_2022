@@ -3,48 +3,69 @@
 }
 
 .context {
+	width: 50%;
+    color: #373D3f;
 	padding: 5rem;
 	padding-bottom: 3rem;
 	z-index: 5;
-	background: #210422;
 }
 
-.context h1 {
-	text-align: center;
-	font-size: 2.5vw;
+.about h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+  color: #333;
+}
+.about h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 75px;
+  background-color: #c50000;
+}
+.about h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #c50000;
 }
 
-.context h4 {
-	text-align: center;
-	color: #cfc5cf;
-	font-size: 2.5vw;
-}
-
-#about-info {
-	width: 70vw;
+.about p {
 	text-align: justify;
-	font-size: 2vw;
-	color: #cfc5cf;
+	font-size: 1.1rem;
+    color: #222;
+}
+
+.about h4 {
+	font-size: 1.3rem;
 }
 
 .lines {
 	position: absolute;
 	top: 100vh;
-	left: 0;
 	right: 0;
 	height: 100%;
 	margin: auto;
-	width: 90vw;
+	width: 50vw;
 }
 
 .line {
 	position: absolute;
-	width: 1px;
+	width: 1.5px;
 	height: 100%;
 	top: 0;
-	left: 50%;
-	background: rgba(255, 255, 255, 0.1);
+	right: 0;
 	overflow: hidden;
+	background-color: #111;
 }
 
 .line::after {
@@ -66,14 +87,14 @@
 	animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
 .line:nth-child(1) {
-	margin-left: -25%;
+	margin-right: 50%;
 }
 
 .line:nth-child(1)::after {
 	animation-delay: 2s;
 }
 .line:nth-child(2) {
-	margin-left: 25%;
+	margin-right: 25%;
 }
 
 .line:nth-child(2)::after {
@@ -87,6 +108,49 @@
 	100% {
 		top: 110%;
 	}
+}
+
+.theme {
+	width: 100%;
+	display: flex;
+	margin-top: 10rem;
+	justify-content: space-between;
+	padding-left: 3rem;
+}
+
+.theme .heading h1::after {
+	width: 0;
+}
+
+.theme .heading h1::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 5px;
+	width: 250px;
+	background-color: #c50000;
+}
+
+.theme-video {
+	width: 50%;
+	z-index: 10;
+	margin-right: 7rem;
+}
+
+.iframe-container{
+  background-color: #08042c;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 20;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 580px) {

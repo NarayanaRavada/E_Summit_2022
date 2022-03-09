@@ -11,7 +11,6 @@ html {
 
 body {
 	font-family: "Poppins", sans-serif;
-	background-color: #030c18;
 	overflow-x: hidden;
 	-webkit-tap-highlight-color: transparent;
 	/* background-color: #920A82; */
@@ -121,15 +120,6 @@ body::-webkit-scrollbar {
 		left: 150%;
 	}
 }
-.logo {
-	color: #40c3ff;
-	/* color: #0162c8; */
-	font-size: 6.5rem;
-	font-weight: 600;
-	text-align: center;
-	animation: appear 0s 0.4s forwards;
-	opacity: 0;
-}
 
 h1 {
 	position: relative;
@@ -154,9 +144,13 @@ h1 em {
 	font-weight: 600;
 }
 
-/* === HEADING STYLE #1 === */
+/* === HEADING STYLE === */
 .logo h1 {
 	color: #40c3ff;
+	font-size: 6.5rem;
+	text-align: center;
+	animation: appear 0s 0.4s forwards;
+	opacity: 0;
 	text-align: center;
 	text-transform: uppercase;
 	padding-bottom: 5px;
@@ -292,41 +286,19 @@ span:nth-child(2) {
 	.stone {
 		width: 2px;
 	}
-	.about .context {
-		width: 100vw;
-		margin-top: 3rem;
-	}
-}
-
-.title {
-	text-align: center;
-	font-size: 50px;
-	color: #40c3ff;
-	width: auto;
-}
-
-.title::after {
-	content: "";
-	width: auto;
-	background-color: #fff;
 }
 
 .about {
 	width: 100vw;
-	padding-bottom: 3rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding-bottom: 5rem;
 	overflow: hidden;
-	border-radius: 5px;
+	background-color: #ddd;
 }
 
 .events {
 	width: 100vw;
 	height: auto;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	margin-top: 5rem;
 }
