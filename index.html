@@ -12,94 +12,107 @@
 		/>
 		<script src="landing_page.js" defer></script>
 		<link rel="stylesheet" href="about.css" />
-		<link rel="stylesheet" href="./Navigation/navbar.css">
+		<link rel="stylesheet" href="./Navigation/navbar.css" />
 		<link rel="stylesheet" href="./gallery/speakers.css" />
 		<link rel="stylesheet" href="./gallery/jquery.flipster.min.css" />
 		<link rel="stylesheet" href="./gallery/speakers.css" />
 		<link rel="stylesheet" href="./events-style.css" />
-		<link rel="stylesheet" type="text/css" href="./contactus/contactus.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./contactus/contactus.css"
+		/>
 		<link rel="stylesheet" href="index.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body>
-
 		<section class="banner" id="sec">
-		  <header>
-			<a href="#" class="logo"><img src="./images/logo-e-summit-new.png" /></a>
-			<svg viewBox="0 0 800 600" id="toggle" onclick="toggle()">
-			  <path
-				d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
-				class="top_bar"
-			  />
-		
-			  <path d="M300,320 L540,320" class="middle_bar" />
-		
-			  <path
-				d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
-				class="bottom_bar"
-				transform="translate(480, 320) scale(1, -1) translate(-480, -318)"
-			  />
-			</svg>
-			<div class="modal-wrapper">
-			  <div class="modal">
-				<div class="headingcontactus">
-				  <div class="title">Contacts</div>
-				  <a class="trigger" href="#">
-					<img src="./images/red-x-10338.png" id="closebtncontactus" />
-				  </a>
+			<header>
+				<a href="#" class="logo"
+					><img src="./images/logo-e-summit-new.png"
+				/></a>
+				<svg viewBox="0 0 800 600" id="toggle" onclick="toggle()">
+					<path
+						d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+						class="top_bar"
+					/>
+
+					<path d="M300,320 L540,320" class="middle_bar" />
+
+					<path
+						d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+						class="bottom_bar"
+						transform="translate(480, 320) scale(1, -1) translate(-480, -318)"
+					/>
+				</svg>
+				<div class="modal-wrapper">
+					<div class="modal">
+						<div class="headingcontactus">
+							<div class="title">Contacts</div>
+							<a class="trigger" href="#">
+								<img
+									src="./images/red-x-10338.png"
+									id="closebtncontactus"
+								/>
+							</a>
+						</div>
+						<div class="contenth">
+							<div class="contactelement">
+								<h3>Sponsorship and Association</h3>
+								<h7>Jaykar <br /> 91 86392 08292</h7>
+							</div>
+							<div class="contactelement">
+								<h3>For Speaking Opportunities</h3>
+								<h7>
+									Bhanu <br />
+									+91 76196 05060
+								</h7>
+							</div>
+							<div class="contactelement">
+								<h3>Registration</h3>
+								<h7>
+									Akash <br />
+									 +91 80180 87510
+								</h7>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="contenth">
-				  <div class="contactelement">
-					<h3>Sponsorship and Association</h3>
-					<h7>Jaykar <br /> 91 86392 08292</h7>
-				  </div>
-				  <div class="contactelement">
-					<h3>For Speaking Opportunities</h3>
-					<h7>
-					  Bhanu <br />
-					  +91 76196 05060
-					</h7>
-				  </div>
-				  <div class="contactelement">
-					<h3>Registration</h3>
-					<h7>
-					  Akash <br />
-					   +91 80180 87510
-					</h7>
-				  </div>
-				</div>
-			  </div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+				<script src="./contactus/contactus.js"></script>
+			</header>
+			<div id="navigation">
+				<ul>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./index.html/#about">About</a></li>
+					<li><a href="./index.html/#theme">Theme</a></li>
+					<li><a href="./index.html/#speakers">Speakers</a></li>
+					<li><a href="./index.html/#events">Events</a></li>
+					<li>
+						<a href="./SubPages/Ourteam/index.html"
+							>Meet The Team
+						</a>
+					</li>
+					<li>
+						<a href="./SubPages/workshops/index.html">Workshops</a>
+					</li>
+					<li><a class="btn trigger" href="#">Contact Us</a></li>
+					<ul class="sci">
+						<li>
+							<a href="#"><img src="./images/facebook.png" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./images/twitter.png" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./images/linkedin.png" /></a>
+						</li>
+					</ul>
+				</ul>
 			</div>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-			<script src="./contactus/contactus.js"></script>
-		  </header>
-		  <div id="navigation">
-			<ul>
-			  <li><a href="./index.html">Home</a></li>
-			  <li><a href="./index.html/#about">About</a></li>
-			  <li><a href="./index.html/#theme">Theme</a></li>
-			  <li><a href="./index.html/#speakers">Speakers</a></li>
-			  <li><a href="./index.html/#events">Events</a></li>
-			  <li><a href="./SubPages/Ourteam/index.html">Meet The Team </a></li>
-			 <li><a href="./SubPages/workshops/index.html">Workshops</a></li>
-			  <li><a class="btn trigger" href="#">Contact Us</a></li>
-			  <ul class="sci">
-				<li>
-				  <a href="#"><img src="./images/facebook.png" /></a>
-				</li>
-				<li>
-				  <a href="#"><img src="./images/twitter.png" /></a>
-				</li>
-				<li>
-				  <a href="#"><img src="./images/linkedin.png" /></a>
-				</li>
-			  </ul>
-			</ul>
-		  </div>
 		</section>
-		
-		
+
 		<script type="text/javascript">
 			function toggle() {
 				var sec = document.getElementById("sec");
@@ -109,11 +122,16 @@
 				sec.classList.toggle("active");
 				tog_button.classList.toggle("active");
 			}
-		</script>	
+		</script>
 		<div class="intro">
+			<div class="video-container">
+				<video autoplay muted loop>
+					<source src="./images/bg_video.mp4" type="video/mp4" />
+				</video>
+			</div>
 			<div class="starry_background"></div>
 			<div class="contents">
-				<div class="logo">E-SUMMIT 2022</div>
+				<div class="logo"><h1>E-SUMMIT 2022</h1></div>
 				<div class="sub-logo">
 					Indian Institute of Technology Bhubaneswar
 				</div>
@@ -179,7 +197,7 @@
 					future Industry leaders and Entrepreneurs to exercise their
 					skills.
 				</p>
-				<br>
+				<br />
 				<h4>"Where Investors Meets Innovators"</h4>
 			</div>
 			<div class="lines">
@@ -189,25 +207,31 @@
 			</div>
 		</div>
 
-		<link rel="stylesheet" href="./ThemeESdesign.css" >
+		<link rel="stylesheet" href="./ThemeESdesign.css" />
 		<div class="theme" id="theme">
 			<div class="iframe-container">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/wdkwt7zMJ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/wdkwt7zMJ6c"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
 			</div>
 		</div>
-		
-
-		
 
 		<!-- Events -->
 		<div class="events" id="events">
-			<h1 class="title" style="color: #f5e6f5;" >Events</h1>
-			<div class="eventcard" id="events">  
+			<h1 class="title" style="color: #f5e6f5">Events</h1>
+			<div class="eventcard" id="events">
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img  class="wit"
-									src="./images/events/guest_talks.png"
+							<img
+								class="wit"
+								src="./images/events/guest_talks.png"
 							/>
 							<h3>Guest Talks</h3>
 						</div>
@@ -215,7 +239,9 @@
 					<div class="face face2">
 						<div class="content">
 							<p>
-							Hear from the experienced!! Learn what the industry experts want to say. Dive into the entrepreneurial world with our 'Guest Talks'
+								Hear from the experienced!! Learn what the
+								industry experts want to say. Dive into the
+								entrepreneurial world with our 'Guest Talks'
 							</p>
 							<a href="#">Register</a>
 						</div>
@@ -224,8 +250,9 @@
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img  class="wit"
-									src="./images/events/competations.png"
+							<img
+								class="wit"
+								src="./images/events/competations.png"
 							/>
 							<h3>Competitions</h3>
 						</div>
@@ -233,7 +260,9 @@
 					<div class="face face2">
 						<div class="content">
 							<p>
-							Experience the most stimulating competitions of E-Summit'21. Outplay your competitors and win exciting prizes and goodies
+								Experience the most stimulating competitions of
+								E-Summit'21. Outplay your competitors and win
+								exciting prizes and goodies
 							</p>
 							<a href="#">Compete</a>
 						</div>
@@ -242,8 +271,9 @@
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img  class="wit"
-									src="./images/events/workshop.png"
+							<img
+								class="wit"
+								src="./images/events/workshop.png"
 							/>
 							<h3>Workshops</h3>
 						</div>
@@ -251,7 +281,9 @@
 					<div class="face face2">
 						<div class="content">
 							<p>
-							Explore and develop latest entrepreneurial and technology skills to excel in this competitive world through our Workshops
+								Explore and develop latest entrepreneurial and
+								technology skills to excel in this competitive
+								world through our Workshops
 							</p>
 							<a href="#">Explore</a>
 						</div>
@@ -260,16 +292,20 @@
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img  class="wit"
-									src="./images/events/innovation_expo.png"
+							<img
+								class="wit"
+								src="./images/events/innovation_expo.png"
 							/>
-							<h3>Innovation<br>Expo</h3>
+							<h3>Innovation<br />Expo</h3>
 						</div>
 					</div>
 					<div class="face face2">
 						<div class="content">
 							<p>
-							An event in which you can showcase your innovative project or ideas as exhibit and win exciting prizes From a Project to a StartUp,the journey begins here!
+								An event in which you can showcase your
+								innovative project or ideas as exhibit and win
+								exciting prizes From a Project to a StartUp,the
+								journey begins here!
 							</p>
 							<a href="#">Explore</a>
 						</div>
@@ -278,16 +314,19 @@
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img  class="wit"
-									src="./images/events/invest_up.png"
+							<img
+								class="wit"
+								src="./images/events/invest_up.png"
 							/>
-							<h3>Invest<br>Up</h3>
+							<h3>Invest<br />Up</h3>
 						</div>
 					</div>
 					<div class="face face2">
 						<div class="content">
 							<p>
-							We present you Investors drive, a one stop solution to all start-ups that are in need of funding and mentoring.
+								We present you Investors drive, a one stop
+								solution to all start-ups that are in need of
+								funding and mentoring.
 							</p>
 							<a href="#">Register Now</a>
 						</div>
@@ -296,16 +335,19 @@
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img class="alreadyWhite"
+							<img
+								class="alreadyWhite"
 								src="./images/events/internfair.png"
 							/>
-							<h3>Internship<br>Fair</h3>
+							<h3>Internship<br />Fair</h3>
 						</div>
 					</div>
 					<div class="face face2">
 						<div class="content">
 							<p>
-							Are you looking for an internship and keen about working in a startup? Then this internship fair is for you.
+								Are you looking for an internship and keen about
+								working in a startup? Then this internship fair
+								is for you.
 							</p>
 							<a href="#">Explore</a>
 						</div>
