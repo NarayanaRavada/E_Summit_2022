@@ -31,7 +31,7 @@
 }
 
 .modal {
-  width: 25%;
+  width: 320px;
   height: 47%;
   border-radius: 4%;
   overflow: hidden;
@@ -70,15 +70,15 @@
 } */
 #closebtncontactus{
   position: absolute;
+  margin: 25px 20px;
   right: 0px;
   top: 0px;
-  padding: 20px;
   height: 20px;
 }
 
 .contenth {
   text-align: center;
-  overflow: scroll;
+  overflow: hidden;
   flex-grow: 10;
   padding: 10px;
   display: flex;
@@ -105,6 +105,12 @@
   color: black;
   font-size: 18;
 }
-.contactelement h7{
+.contactelement h6 span{
+  font-size: 1rem;
   color: blue;
+}
+
+.contactelement h6 {
+	font-weight: 400;
+	font-size: 1.4rem;
 }

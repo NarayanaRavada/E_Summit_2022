@@ -41,26 +41,27 @@
 
 .carousel img{
     width:350px;
+	height: 400px;
+	object-fit: cover;
     -webkit-box-reflect: below 17px linear-gradient(
         rgba(255,255,255,0.1),
         rgba(255,255,255,0.3));
 }
 
-.contint div{
-    background: black;
-    color: white;
-    margin-bottom: 5px;
-    font-family: sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
+.contint {
+	width: 350px;
 }
-
 .contint:hover{
     cursor: pointer;
 }
 
+.contint {
+	text-align: center;
+}
+.contint span{
+	margin-left: 0;
+    font-weight: 400;
+}
 @media only screen and (max-width: 1000px) {
 	.speakers h1 {
 		font-size: 2.3rem;
