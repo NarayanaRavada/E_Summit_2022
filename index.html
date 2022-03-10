@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="./contactus/contactus.css" />
 	</head>
 
-	<body>
+	<body onload="playVid()">
 		<section class="banner" id="sec">
 			<header>
 				<a href="#" class="logo"
@@ -189,10 +189,14 @@
 
 		<div class="theme" id="theme">
 			<div class="contnt">
+				<div>
 				<h1>
 					Embracing Innovation<br />&<br id="smb" />
 					Re-Shaping Future
 				</h1>
+				</div>
+				<p>Innovation involves a new way of thinking, thereby helping students develop their creativity and problem solving skills. In order to be competitive in this world where the expiration date of business models is shortening, we at E-Summit believe that we need to provide the future leaders with the skills and experience that give them the courage to imagine, test and implement new ways of doing business, ultimately giving them the cutting edge. We aim to openly embrace innovation and inventive design to bring people together and grow.
+</p>
 			</div>
 			<div class="theme-video">
 				<div class="iframe-container">
@@ -248,7 +252,7 @@
 						<div class="content">
 							<p>
 								Experience the most stimulating competitions of
-								E-Summit'21. Outplay your competitors and win
+								E-Summit'22. Outplay your competitors and win
 								exciting prizes and goodies
 							</p>
 							<a href="./competitiions/index.html">Compete</a>
@@ -478,6 +482,10 @@
 					style: "carousel",
 					spacing: -0.27,
 				});
+
+				function playVid() {
+									document.querySelector('.video-container').style.opacity = "1";
+								}
 			</script>
 		</div>
 	</body>

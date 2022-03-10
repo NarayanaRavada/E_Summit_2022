@@ -1,3 +1,16 @@
+.contnt {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.contnt p {
+	font-size: 1.1rem;
+	text-align: justify;
+	padding: 5rem;
+	padding-left: 0;
+}
+
 .theme h1 {
 	font-size: 2.5rem;
 	font-weight: 500;
@@ -14,7 +27,7 @@
 	content: "";
 	position: absolute;
 	height: 5px;
-	width: 100%;
+	width: min(400px, 100%);
 	left: 0;
 	bottom: 0;
 	background-color: #c50000;
@@ -94,5 +107,16 @@
 	}
 	#smb {
 		display: block;
+	}
+
+	.contnt p {
+		padding: 0;
+		padding-top: 2rem;
+		padding-bottom: 5rem;
+	}
+
+	.contnt {
+		padding: 0;
+		width: 100%;
 	}
 }

@@ -40,7 +40,7 @@
 
 .about p {
 	text-align: justify;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
     color: #222;
 }
 
@@ -123,7 +123,7 @@
 
 @media only screen and (max-width: 1000px) {
 	.about {
-		padding-bottom: 1rem;
+		padding: 3rem;
 	}
 
 	.lines {
@@ -131,8 +131,8 @@
 	}
 
 	.context {
+		padding: 0;
 		width: 100%;
-		padding: 10vw;
 	}
 
 	.context h1 {
@@ -143,4 +143,4 @@
 		font-size: 1.2rem;
 		text-align: center;
 	}
-}
+}                

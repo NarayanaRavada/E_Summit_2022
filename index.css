@@ -46,8 +46,9 @@ body::-webkit-scrollbar {
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 0;
+	transition: all 1s ease-in-out;
 }
-
 .video-container video {
 	min-width: 100%;
 	min-height: 100%;
@@ -56,6 +57,7 @@ body::-webkit-scrollbar {
 .intro {
 	width: 100vw;
 	height: 100vh;
+	background: linear-gradient(to left, #8fb4f3, #19475f, #19475f);
 	background-size: cover;
 	background-clip: fixed;
 	background-repeat: no-repeat;
