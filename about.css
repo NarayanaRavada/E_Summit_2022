@@ -3,11 +3,10 @@
 }
 
 .context {
-	width: 50%;
+	width: 60%;
     color: #373D3f;
-	padding: 5rem;
-	padding-bottom: 3rem;
 	z-index: 5;
+	padding: 4rem;
 }
 
 .about h1 {
@@ -88,6 +87,7 @@
 }
 .line:nth-child(1) {
 	margin-right: 50%;
+	width: 1.7px;
 }
 
 .line:nth-child(1)::after {
@@ -110,52 +110,36 @@
 	}
 }
 
-.theme {
-	width: 100%;
-	display: flex;
-	margin-top: 10rem;
-	justify-content: space-between;
-	padding-left: 3rem;
-}
+@media only screen and (max-width: 1250px) {
+	.context {
+		width: 70%;
+	}
 
-.theme .heading h1::after {
-	width: 0;
-}
-
-.theme .heading h1::before {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 5px;
-	width: 250px;
-	background-color: #c50000;
-}
-
-.theme-video {
-	width: 50%;
-	z-index: 10;
-	margin-right: 7rem;
-}
-
-.iframe-container{
-  background-color: #08042c;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; 
-  height: 0;
-}
-.iframe-container iframe{
-  position: absolute;
-  top:0;
-  left: 20;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
-@media only screen and (max-width: 580px) {
-	.context h4 {
-		font-size: 1.2rem;
+	.line:nth-child(1) {
+		margin-right: 60%;
 	}
 }
 
+@media only screen and (max-width: 1000px) {
+	.about {
+		padding-bottom: 2rem;
+	}
+
+	.lines {
+		display: none;
+	}
+
+	.context {
+		width: 100%;
+		padding: 10vw;
+	}
+
+	.context h1 {
+		font-size: 2.2rem;
+	}
+	
+	.context h4 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+}

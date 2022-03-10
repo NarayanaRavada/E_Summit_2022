@@ -1,0 +1,84 @@
+.theme h1 {
+	font-size: 3.3rem;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.5em;
+	padding-bottom: 15px;
+	margin-right: 15px;
+	position: relative;
+	color: #333;
+	width: auto;
+}
+.theme h1:before {
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 33%;
+	left: 0;
+	bottom: 0;
+	background-color: #c50000;
+}
+.theme h1:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 66%;
+	background-color: #c50000;
+}
+
+.theme-video {
+	position: relative;
+	width: 55vw;
+}
+.iframe-container {
+	position: relative;
+	background-color: #08042c;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+.iframe-container iframe {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+	.theme h1 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.theme {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 4rem;
+		background-color: #ccc;
+	}
+	.theme-video {
+		width: 100%;
+	}
+	.theme h1 {
+		font-size: 1.7rem;
+		margin-bottom: 2rem;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.theme h1:after {
+		width: 100%;
+		height: 1px;
+	}
+
+	.theme h1:before {
+		width: 40%;
+		left: 30%;
+		height: 1px;
+	}
+}
