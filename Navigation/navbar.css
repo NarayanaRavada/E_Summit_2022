@@ -148,18 +148,19 @@ header #toggle {
   width: 50px;
   height: 50px;
   text-decoration: none;
-  border: 1px;
   margin: 10px 0 0;
 }
 
 .sci li a img {
-  max-width: 40px;
+  width: 40px;
   padding: 4px;
-  border: 3px solid #000;
   border-radius: 8px;
 }
 
-.sci li a img:hover {
-  background-color: #fff;
+.sci li a:hover {
   filter: invert(1);
+}
+
+.sci li:first-child img{
+	transform: scale(1.2);
 }

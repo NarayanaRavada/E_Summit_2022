@@ -13,7 +13,7 @@ a {
 }
 
 body {
-	background: linear-gradient(to right, #000, #111, #000);
+	background: linear-gradient(to right, #000, #222, #000);
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
@@ -37,7 +37,7 @@ body {
 	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	font-size: 4rem;
-	color: #ddd;
+	color: #fff;
 	padding: 2rem;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .title p {
 	font-size: 1.2rem;
-	color: #ccc;
+	color: #fff;
 	padding: 3rem;
 	width: 60%;
 	text-align: justify;
@@ -268,6 +268,18 @@ button {
 	width: 130px;
 	height: 40px;
 	cursor: pointer;
+}
+
+.navbar {
+	height: 10vh;
+	width: 100vw;
+	padding: 1rem;
+	background: transparent;
+}
+
+.navbar img {
+	width: 40px;
+	filter: invert(1);
 }
 
 .alrt .content a:hover {

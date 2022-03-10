@@ -32,7 +32,6 @@
 
 .modal {
   width: 320px;
-  height: 47%;
   border-radius: 4%;
   overflow: hidden;
   display: flex;
@@ -98,8 +97,8 @@
 }
 .contactelement {
   display:block;
-  height: 60px;
   text-align: center;
+  padding: 1rem 0;
 }
 .contactelement h3{
   color: black;
