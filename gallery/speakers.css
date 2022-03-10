@@ -3,8 +3,8 @@
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.5em;
-  padding-bottom: 15px;
   position: relative;
+  padding-bottom: 15px;
   color: #111;
 }
 .speakers h1:after {
@@ -27,6 +27,7 @@
 }
 .hero {
     width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -34,8 +35,8 @@
 }
 
 .hero .carousel {
-	margin-top: 3rem;
     overflow: visible;
+	height: auto;
 }
 
 .carousel img{
@@ -64,7 +65,7 @@
 	.speakers h1 {
 		font-size: 2.3rem;
 	}
-	.carousel {
-		transform: scale(0.8);
+	.speakers img {
+		transform: scale(0.9);
 	}
 }

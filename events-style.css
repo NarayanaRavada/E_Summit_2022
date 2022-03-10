@@ -101,7 +101,7 @@
 
 .eventcard .card .face.face2 {
 	position: relative;
-	background: #D9CB9E;
+	background: #ddd;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -136,6 +136,9 @@
 	color: #333;
 	padding: 5px;
 	border: 1px solid #333;
+}
+
+.eventcard .card:nth-child(2) .face.face2 .content a {
 	animation: shake 2s ease-in-out infinite;
 }
 

@@ -272,7 +272,6 @@ span:nth-child(2) {
 	padding: 3rem;
 	padding-bottom: 5rem;
 	padding-top: 0;
-	margin-bottom: 5rem;
 	background-color: #ddd;
 
 }
@@ -313,7 +312,7 @@ span:nth-child(2) {
 		font-size: 3.5rem;
 	}
 	.sub-logo {
-		font-sinize: 0.9rem;
+		font-size: 0.9rem;
 	}
 	.cta {
 		transform: skew(-15deg) scale(0.6);
