@@ -135,7 +135,7 @@ body {
 }
 
 .card:nth-child(1) {
-	background-image: url("https://cdn4.vectorstock.com/i/1000x1000/14/58/bid-auction-vector-2111458.jpg");
+	background-image: url("../images/ipl_auction.jpg");
 }
 
 .card:hover {
