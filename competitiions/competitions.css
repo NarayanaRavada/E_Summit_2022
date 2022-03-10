@@ -18,6 +18,11 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 .title {
@@ -250,7 +255,7 @@ body {
 	align-items: center;
 }
 
-.alrt .content a{
+.alrt .content a {
 	width: 250px;
 	height: 35px;
 	background: #ddd;
@@ -258,7 +263,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #FADA5E;
+	background: #fada5e;
 }
 
 button {
@@ -282,7 +287,7 @@ button {
 }
 
 .alrt .content a:hover {
-	background-color: #A5E9F9;
+	background-color: #a5e9f9;
 }
 
 @media only screen and (max-width: 1000px) {
