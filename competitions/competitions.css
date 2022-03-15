@@ -282,4 +282,8 @@ button {
   .title p {
     font-size: 1.1rem;
   }
+
+  .alrt {
+    height: auto;
+  }
 }
