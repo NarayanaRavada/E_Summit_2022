@@ -10,51 +10,107 @@
 	</head>
 	<body>
 		<div class="navbar">
-			<a href="../index.html#"><img src="../images/logo-e-summit-new.png" /></a>
+			<a href="../index.html#"
+				><img src="../images/logo-e-summit-new.png"
+			/></a>
 		</div>
 		<div class="title">
 			<h1>Competitions</h1>
 			<p>
-				E-Summit presents a series of mind boggling competitions involving
-				creativity, marketing & managerial skills, team work, business prowess.
-				Register for these competitions to test your mettle and emerge as a
-				champion
+				E-Summit presents a series of mind boggling competitions
+				involving creativity, marketing & managerial skills, team work,
+				business prowess. Register for these competitions to test your
+				mettle and emerge as a champion
 			</p>
 		</div>
 		<div class="box">
 			<div class="c-wrapper">
-				<div class="card">
+				<div class="card" style="background-image: url('../images/ipl_auction.jpg');">
 					<div class="layer">
-						<h3>IPL Auction</h3>
+						<h3 class="ctitle">IPL Auction</h3>
 						<div class="info">
 							<p>
-								Welcome to the thrill of a live IPL Auction!! Put yourselves
-								into the shoes of a bidder and build your dream fantasy IPL team
-								that you always wanted to lift the coveted trophy.
+								Welcome to the thrill of a live IPL Auction!!
+								Put yourselves into the shoes of a bidder and
+								build your dream fantasy IPL team that you
+								always wanted to lift the coveted trophy.
 							</p>
-							<button onclick="register()">Register</button>
+							<button
+								onclick="register({key: 0, Insider: 'https://forms.gle/XNTV3ydXwAjFKEFJ8', Outsider: 'https://dare2compete.com/competition/ipl-auction-e-summit22-indian-institute-of-technology-iit-bhubaneswar-273501?lb=hT0lyb9'})"
+							>
+								Register
+							</button>
 						</div>
 					</div>
 				</div>
-				<svg id="rect" width="305" height="405">
-					<rect width="300" height="100" style="fill: transparent" />
-				</svg>
+			</div>
+			<div class="c-wrapper">
+				<div class="card" style="background-image: url('../images/epigrama.png');">
+					<div class="layer">
+						<h3 class="ctitle">Epigramma</h3>
+						<div class="info">
+							<p>
+								Epigramma is a tagline/slogan making competition
+								of 2 rounds. Round 1 is theme-based. Both rounds
+								will be held online.
+							</p>
+							<button
+								onclick="register({key: 1, Insider: 'https://forms.gle/SXp6UTV8i46geMUF7', Outsider: 'https://dare2compete.com/creative-cultural-event/epigramma-e-summit22-indian-institute-of-technology-iit-bhubaneswar-274940'})"
+							>
+								Register
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="c-wrapper">
+				<div class="card" style="background-image: url('../images/insignia.jpg');">
+					<div class="layer" >
+						<h3 class="ctitle">Insignia</h3>
+						<div class="info">
+							<p>
+								E SUMMIT’21 is here to announce a Insignia. This
+								is a logo designing competition of 2 rounds.
+								Both rounds will be held online.
+							</p>
+							<button
+								onclick="register({key: 2, Insider: 'https://forms.gle/16TrerQq1vTkgNF58', Outsider: 'https://dare2compete.com/creative-cultural-event/insignia-e-summit22-indian-institute-of-technology-iit-bhubaneswar-274952'})"
+							>
+								Register
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="c-wrapper">
+				<div class="card" style="background-image: url('../images/kreo.jpg');">
+					<div class="layer">
+						<h3 class="ctitle">Kreo</h3>
+						<div class="info">
+							<p>
+								E-Summit’21 IIT Bhubaneswar presents you with
+								Kreo. This is a poster making competition of 2
+								rounds. Both rounds will be held online.
+							</p>
+							<button
+								onclick="register({key: 3, Insider: 'https://forms.gle/1hwmw7xLHeS8fc7y6', Outsider: 'https://dare2compete.com/creative-cultural-event/kreo-the-poster-making-competition-e-summit22-indian-institute-of-technology-iit-bhubaneswar-274925'})"
+							>
+								Register
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="modal">
 			<div class="alrt">
-				<h1>IPL AUCTION</h1>
+				<h1 id="alrt-title"></h1>
 				<div class="content">
-					<p>
-						Put yourselves into the shoes of a bidder and build your dream
-						fantasy IPL team that you always wanted to lift the coveted trophy.
-					</p>
-					<a href="https://forms.gle/XNTV3ydXwAjFKEFJ8" target="_blank"
+					<p id="alrt-content"></p>
+					<a id="insider" href="#" target="_blank"
 						>Register as IITBBS student</a
 					>
-					<a
-						href="https://dare2compete.com/competition/ipl-auction-e-summit22-indian-institute-of-technology-iit-bhubaneswar-273501?lb=hT0lyb9"
-						target="_blank"
+					<a id="outsider" href="#" target="_blank"
 						>Register from other college</a
 					>
 				</div>
@@ -62,7 +118,14 @@
 		</div>
 	</body>
 	<script>
-		function register() {
+		function register(props) {
+			const title = document.getElementsByClassName("ctitle")[props.key].innerText;
+			const content = document.getElementsByClassName("info")[props.key].children[0].innerText;
+
+			document.getElementById("alrt-title").innerText = `${title}`;
+			document.getElementById("alrt-content").innerText = `${content}`;
+			document.getElementById("insider").href = `${props.Insider}`;
+			document.getElementById("outsider").href = `${props.Outsider}`;
 			document.querySelector(".modal").style.display = "flex";
 		}
 
