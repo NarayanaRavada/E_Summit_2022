@@ -44,34 +44,34 @@ header #toggle {
   cursor: pointer;
 }
 
-#toggle path{
+#toggle path {
   stroke-width: 30;
   stroke-linecap: round;
   stroke: #fff;
   fill: none;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* In menu form */
 
 .top_bar,
-.bottom_bar{
+.bottom_bar {
   stroke-dasharray: 240px 910px;
 }
 
-.middle_bar{
+.middle_bar {
   stroke-dasharray: 240px 240px;
 }
 
 /* In cross form */
 
 #toggle.active .top_bar,
-#toggle.active .bottom_bar{
+#toggle.active .bottom_bar {
   stroke-dashoffset: -650px;
   stroke: #000;
 }
 
-#toggle.active .middle_bar{
+#toggle.active .middle_bar {
   stroke-dasharray: 0px 220px;
   stroke-dashoffset: -120px;
   stroke: #000;
@@ -161,6 +161,6 @@ header #toggle {
   filter: invert(1);
 }
 
-.sci li:first-child img{
-	transform: scale(1.2);
+.sci li:first-child img {
+  transform: scale(1.2);
 }
