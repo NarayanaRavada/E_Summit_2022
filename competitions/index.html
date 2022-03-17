@@ -268,11 +268,13 @@
 			document.getElementById("insider").href = `${props.Insider}`;
 			document.getElementById("outsider").href = `${props.Outsider}`;                                                                              https://dare2compete.com/o/1jo6Pif?lb=hT0lyb9
 			document.querySelector(".modal").style.display = "flex";
+					document.body.style.overflow = "hidden";
 		}
 
 		function close(e) {
 			if (e.target.classList.contains("modal")) {
 				document.querySelector(".modal").style.display = "none";
+					document.body.style.overflow = "scroll";
 			}
 		}
 
