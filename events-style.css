@@ -159,6 +159,10 @@
   animation: shake 2s ease-in-out infinite;
 }
 
+.eventcard .card:nth-child(5) .face.face2 .content a {
+  animation: shake 2s ease-in-out infinite;
+}
+
 @keyframes shake {
   0%,
   100% {

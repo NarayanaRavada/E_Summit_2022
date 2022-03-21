@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="./theme.css" />
 		<link rel="stylesheet" href="./events-style.css" />
 		<link rel="stylesheet" href="./contactus/contactus.css" />
+		<link rel="stylesheet" href="./footer.css" />
 	</head>
 
 	<body onload="playVid()">
@@ -335,7 +336,9 @@
 								innovative project or ideas as exhibit and win
 								exciting prizes.
 							</p>
-							<a href="#events" onclick="register()">Register now</a>
+							<a href="#events" onclick="register()"
+								>Register now</a
+							>
 						</div>
 					</div>
 				</div>
@@ -356,7 +359,11 @@
 								solution to all start-ups that are in need of
 								funding and mentoring.
 							</p>
-							<a href="#">Coming soon..</a>
+							<a
+								href="https://dare2compete.com/competition/investup-e-summit22-indian-institute-of-technology-iit-bhubaneswar-275231"
+								target="_blank"
+								>Register Now</a
+							>
 						</div>
 					</div>
 				</div>
@@ -537,10 +544,16 @@
 						project or ideas as exhibit and win exciting prizes.
 						From a Project to a StartUp, the journey begins here!
 					</p>
-					<a id="insider" href="https://docs.google.com/forms/d/e/1FAIpQLScin06zZv0akT4EzDI2naAPGNTvlG7R69WqdMtyzbV6Nk4wUA/viewform?usp=sf_link" target="_blank"
+					<a
+						id="insider"
+						href="https://docs.google.com/forms/d/e/1FAIpQLScin06zZv0akT4EzDI2naAPGNTvlG7R69WqdMtyzbV6Nk4wUA/viewform?usp=sf_link"
+						target="_blank"
 						>Register as IITBBS student</a
 					>
-					<a id="outsider" href="https://dare2compete.com/o/1jo6Pif?lb=hT0lyb9" target="_blank"
+					<a
+						id="outsider"
+						href="https://dare2compete.com/o/1jo6Pif?lb=hT0lyb9"
+						target="_blank"
 						>Register from other college</a
 					>
 				</div>
@@ -555,11 +568,28 @@
 			function close(e) {
 				if (e.target.classList.contains("_modal")) {
 					document.querySelector("._modal").style.display = "none";
-				    document.body.style.overflow = "scroll";
+					document.body.style.overflow = "scroll";
 				}
 			}
 
 			document.querySelector("._modal").addEventListener("click", close);
 		</script>
+		<footer>
+			<h1>Our Sponsors</h1>
+			<div class="sponsors">
+					<div class="sponsor"></div>
+					<div class="sponsor"></div>
+					<div class="sponsor"></div>
+					<div class="sponsor"></div>
+					<div class="sponsor"></div>
+			</div>
+			<h1>Media Partners</h1>
+			<div class="msponsors">
+				<div class="mps"></div>
+				<div class="mps"></div>
+				<div class="mps"></div>
+				<div class="mps"></div>
+			</div>
+		</footer>
 	</body>
 </html>
