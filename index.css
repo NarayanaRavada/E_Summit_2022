@@ -379,7 +379,6 @@ footer h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
   margin: 0.5rem;
 }
 
@@ -516,5 +515,31 @@ footer h1 {
   }
   .alrt p {
     font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .sponsors {
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .sponsor {
+    transform: scale(0.8);
+    margin: 0;
+  }
+
+  .msponsors {
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  .mps {
+    transform: scale(0.8);
+    margin: 0;
   }
 }
