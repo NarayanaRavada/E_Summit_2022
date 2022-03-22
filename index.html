@@ -1,595 +1,474 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>E - SUMMIT ' 22</title>
-		<meta
-			name="esummit_2022"
-			content="Anual techno management fest Esummit"
-		/>
-		<script src="navbar.js" defer></script>
-		<link rel="icon" href="./images/es-logo.png" />
-		<link rel="stylesheet" href="index.css" />
-		<link rel="stylesheet" href="./Navigation/navbar.css" />
-		<link rel="stylesheet" href="./gallery/speakers.css" />
-		<link rel="stylesheet" href="./gallery/jquery.flipster.min.css" />
-		<link rel="stylesheet" href="./gallery/speakers.css" />
-		<link rel="stylesheet" href="about.css" />
-		<link rel="stylesheet" href="./theme.css" />
-		<link rel="stylesheet" href="./events-style.css" />
-		<link rel="stylesheet" href="./contactus/contactus.css" />
-		<link rel="stylesheet" href="./footer.css" />
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E - SUMMIT ' 22</title>
+    <meta name="esummit_2022" content="Anual techno management fest Esummit" />
+    <script src="navbar.js" defer></script>
+    <link rel="icon" href="./images/es-logo.png" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./Navigation/navbar.css" />
+    <link rel="stylesheet" href="./gallery/speakers.css" />
+    <link rel="stylesheet" href="./gallery/jquery.flipster.min.css" />
+    <link rel="stylesheet" href="./gallery/speakers.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="./theme.css" />
+    <link rel="stylesheet" href="./events-style.css" />
+    <link rel="stylesheet" href="./contactus/contactus.css" />
+    <link rel="stylesheet" href="./footer.css" />
+  </head>
 
-	<body onload="playVid()">
-		<section class="banner" id="sec">
-			<header>
-				<a href="#" class="logo"
-					><img src="./images/logo-e-summit-new.png"
-				/></a>
-				<svg viewBox="0 0 800 600" id="toggle" onclick="toggle()">
-					<path
-						d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
-						class="top_bar"
-					/>
+  <body onload="playVid()">
+    <section class="banner" id="sec">
+      <header>
+        <a href="#" class="logo"
+          ><img src="./images/logo-e-summit-new.png"
+        /></a>
+        <svg viewBox="0 0 800 600" id="toggle" onclick="toggle()">
+          <path
+            d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+            class="top_bar"
+          />
 
-					<path d="M300,320 L540,320" class="middle_bar" />
+          <path d="M300,320 L540,320" class="middle_bar" />
 
-					<path
-						d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
-						class="bottom_bar"
-						transform="translate(480, 320) scale(1, -1) translate(-480, -318)"
-					/>
-				</svg>
-				<div class="modal-wrapper">
-					<div class="modal">
-						<div class="headingcontactus">
-							<div class="title">Contacts</div>
-							<a class="trigger" href="#">
-								<img
-									src="./images/red-x-10338.png"
-									id="closebtncontactus"
-								/>
-							</a>
-						</div>
-						<div class="contenth">
-							<div class="contactelement">
-								<h3>Sponsorship and Association</h3>
-								<a href="tel:919910594512"
-									><h6>
-										Vanraj<br /><span>+91 99105 94512</span>
-									</h6></a
-								>
-							</div>
-							<div class="contactelement">
-								<h3>Registration</h3>
-								<a href="tel:918247808373"
-									><h6>
-										Sai Krishna<br /><span
-											>+91 82478 08373</span
-										>
-									</h6></a
-								>
-							</div>
-							<div class="contactelement">
-								<h3>For Speaking Opportunities</h3>
-								<a href="tel:91733860635"
-									><h6>
-										Abhinav<br /><span
-											>+91 73386 06535</span
-										>
-									</h6></a
-								>
-							</div>
-						</div>
-					</div>
-				</div>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-				<script src="./contactus/contactus.js"></script>
-			</header>
-			<div id="navigation">
-				<ul>
-					<li><a href="./index.html#">Home</a></li>
-					<li><a href="./index.html#about">About</a></li>
-					<li><a href="./index.html#theme">Theme</a></li>
-					<li><a href="./index.html#events">Events</a></li>
-					<li><a href="./index.html#speakers">Speakers</a></li>
-					<li><a class="btn trigger" href="#">Contact Us</a></li>
-					<ul class="sci">
-						<li>
-							<a
-								href="https://www.facebook.com/centrepreneurship/"
-								><img src="./images/facebook.png"
-							/></a>
-						</li>
-						<li>
-							<a
-								href="https://www.instagram.com/centrepreneurship/"
-								><img src="./images/instagram.png"
-							/></a>
-						</li>
-						<li>
-							<a
-								href="https://www.linkedin.com/company/e-summit-iit-bhubaneswar/"
-								><img src="./images/linkedin.png"
-							/></a>
-						</li>
-					</ul>
-				</ul>
-			</div>
-		</section>
+          <path
+            d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+            class="bottom_bar"
+            transform="translate(480, 320) scale(1, -1) translate(-480, -318)"
+          />
+        </svg>
+        <div class="modal-wrapper">
+          <div class="modal">
+            <div class="headingcontactus">
+              <div class="title">Contacts</div>
+              <a class="trigger" href="#">
+                <img src="./images/red-x-10338.png" id="closebtncontactus" />
+              </a>
+            </div>
+            <div class="contenth">
+              <div class="contactelement">
+                <h3>Sponsorship and Association</h3>
+                <a href="tel:919910594512"
+                  ><h6>Vanraj<br /><span>+91 99105 94512</span></h6></a
+                >
+              </div>
+              <div class="contactelement">
+                <h3>Registration</h3>
+                <a href="tel:918247808373"
+                  ><h6>Sai Krishna<br /><span>+91 82478 08373</span></h6></a
+                >
+              </div>
+              <div class="contactelement">
+                <h3>For Speaking Opportunities</h3>
+                <a href="tel:91733860635"
+                  ><h6>Abhinav<br /><span>+91 73386 06535</span></h6></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="./contactus/contactus.js"></script>
+      </header>
+      <div id="navigation">
+        <ul>
+          <li><a href="./index.html#">Home</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#theme">Theme</a></li>
+          <li><a href="./index.html#events">Events</a></li>
+          <li><a href="./index.html#speakers">Speakers</a></li>
+          <li><a class="btn trigger" href="#">Contact Us</a></li>
+          <ul class="sci">
+            <li>
+              <a href="https://www.facebook.com/centrepreneurship/"
+                ><img src="./images/facebook.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/centrepreneurship/"
+                ><img src="./images/instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/e-summit-iit-bhubaneswar/"
+                ><img src="./images/linkedin.png"
+              /></a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </section>
 
-		<script type="text/javascript">
-			function toggle() {
-				var sec = document.getElementById("sec");
-				var nav = document.getElementById("navigation");
-				var tog_button = document.getElementById("toggle");
-				nav.classList.toggle("active");
-				sec.classList.toggle("active");
-				tog_button.classList.toggle("active");
-			}
-		</script>
-		<div class="intro">
-			<div class="video-container">
-				<video autoplay muted loop>
-					<source src="./images/bg_video.mp4" type="video/mp4" />
-				</video>
-			</div>
-			<div class="starry_background"></div>
-			<div class="contents">
-				<div class="logo"><img src="./images/theme.png" /></div>
-				<div class="wrapper">
-					<a
-						class="cta"
-						href="https://dare2compete.com/festival/e-summit22-indian-institute-of-technology-iit-bhubaneswar-19915"
-						target="_blank"
-					>
-						<span>Register</span>
-						<span>
-							<svg
-								width="66px"
-								height="43px"
-								viewBox="0 0 66 43"
-								version="1.1"
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-							>
-								<g
-									id="arrow"
-									stroke="none"
-									stroke-width="1"
-									fill="none"
-									fill-rule="evenodd"
-								>
-									<path
-										class="one"
-										d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-										fill="#FFFFFF"
-									></path>
-									<path
-										class="two"
-										d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-										fill="#FFFFFF"
-									></path>
-									<path
-										class="three"
-										d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-										fill="#FFFFFF"
-									></path>
-								</g>
-							</svg>
-						</span>
-					</a>
-				</div>
-			</div>
-		</div>
+    <script type="text/javascript">
+      function toggle() {
+        var sec = document.getElementById("sec");
+        var nav = document.getElementById("navigation");
+        var tog_button = document.getElementById("toggle");
+        nav.classList.toggle("active");
+        sec.classList.toggle("active");
+        tog_button.classList.toggle("active");
+      }
+    </script>
+    <div class="intro">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="./images/bg_video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="starry_background"></div>
+      <div class="contents">
+        <div class="logo"><img src="./images/theme.png" /></div>
+        <div class="wrapper">
+          <a
+            class="cta"
+            href="https://dare2compete.com/festival/e-summit22-indian-institute-of-technology-iit-bhubaneswar-19915"
+            target="_blank"
+          >
+            <span>Register</span>
+            <span>
+              <svg
+                width="66px"
+                height="43px"
+                viewBox="0 0 66 43"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  id="arrow"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <path
+                    class="one"
+                    d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                    fill="#FFFFFF"
+                  ></path>
+                  <path
+                    class="two"
+                    d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                    fill="#FFFFFF"
+                  ></path>
+                  <path
+                    class="three"
+                    d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                    fill="#FFFFFF"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
 
-		<div class="about" id="about">
-			<div class="context">
-				<h1 class="title">About us</h1>
-				<br />
-				<br />
-				<p id="about-info">
-					E-Summit is a three day event, started as an initiative of
-					the E-Cell of IIT Bhubaneswar. The Summit seeks to
-					facilitate interaction among industrialists, funding
-					agencies, seasoned and upcoming entrepreneurs, academia and
-					students of the participating institutes. E-Summit’22 will
-					include a gamut of activities such as entrepreneurial guest
-					lectures, workshops and panel discussions with experts,
-					startup internship fair and investors drive. E-summit, as a
-					culture of IIT Bhubaneswar, has proved its worth in
-					depleting the Chasm that exists between E-and management. It
-					is the stage for future Industry leaders and Entrepreneurs
-					to exercise their skills.
-				</p>
-				<br />
-				<h4>"Where Investors Meets Innovators"</h4>
-			</div>
-			<div class="lines">
-				<div class="line"></div>
-				<div class="line"></div>
-			</div>
-		</div>
+    <div class="about" id="about">
+      <div class="context">
+        <h1 class="title">About us</h1>
+        <br />
+        <br />
+        <p id="about-info">
+          E-Summit is a three day event, started as an initiative of the E-Cell
+          of IIT Bhubaneswar. The Summit seeks to facilitate interaction among
+          industrialists, funding agencies, seasoned and upcoming entrepreneurs,
+          academia and students of the participating institutes. E-Summit’22
+          will include a gamut of activities such as entrepreneurial guest
+          lectures, workshops and panel discussions with experts, startup
+          internship fair and investors drive. E-summit, as a culture of IIT
+          Bhubaneswar, has proved its worth in depleting the Chasm that exists
+          between E-and management. It is the stage for future Industry leaders
+          and Entrepreneurs to exercise their skills.
+        </p>
+        <br />
+        <h4>"Where Investors Meets Innovators"</h4>
+      </div>
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
 
-		<div class="theme" id="theme">
-			<div class="contnt">
-				<div>
-					<h1>
-						Embracing Innovation&nbsp;<b>:</b><br />
-						Reshaping The Future
-					</h1>
-				</div>
-				<p>
-					Innovation involves a new way of thinking, thereby helping
-					students develop their creativity and problem solving
-					skills. In order to be competitive in this world where the
-					expiration date of business models is shortening, we at
-					E-Summit believe that we need to provide the future leaders
-					with the skills and experience that give them the courage to
-					imagine, test and implement new ways of doing business,
-					ultimately giving them the cutting edge. We aim to openly
-					embrace innovation and inventive design to bring people
-					together and grow.
-				</p>
-			</div>
-			<div class="theme-video">
-				<div class="iframe-container">
-					<iframe
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/wdkwt7zMJ6c"
-						title="E-SUMMIT THEME 2022"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
-				</div>
-			</div>
-		</div>
+    <div class="theme" id="theme">
+      <div class="contnt">
+        <div>
+          <h1>
+            Embracing Innovation&nbsp;<b>:</b><br />
+            Reshaping The Future
+          </h1>
+        </div>
+        <p>
+          Innovation involves a new way of thinking, thereby helping students
+          develop their creativity and problem solving skills. In order to be
+          competitive in this world where the expiration date of business models
+          is shortening, we at E-Summit believe that we need to provide the
+          future leaders with the skills and experience that give them the
+          courage to imagine, test and implement new ways of doing business,
+          ultimately giving them the cutting edge. We aim to openly embrace
+          innovation and inventive design to bring people together and grow.
+        </p>
+      </div>
+      <div class="theme-video">
+        <div class="iframe-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wdkwt7zMJ6c"
+            title="E-SUMMIT THEME 2022"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
-		<!-- Events -->
-		<div class="events" id="events">
-			<h1 class="title" style="color: #f5e6f5">Events</h1>
-			<div class="eventcard" id="events">
-				<div class="card">
-					<div class="face face1">
-						<div class="content">
-							<img
-								class="wit"
-								src="./images/events/guest_talks.png"
-							/>
-							<h3>Guest Talks</h3>
-						</div>
-					</div>
-					<div class="face face2">
-						<div class="content">
-							<p>
-								Hear from the experienced!! Learn what the
-								industry experts want to say. Dive into the
-								entrepreneurial world with our 'Guest Talks'
-							</p>
-							<a href="#">Coming soon..</a>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="face face1">
-						<div class="content">
-							<img
-								class="wit"
-								src="./images/events/competations.png"
-							/>
-							<h3>Competitions</h3>
-						</div>
-					</div>
-					<div class="face face2">
-						<div class="content">
-							<p>
-								Experience the most stimulating competitions of
-								E-Summit'22. Outplay your competitors and win
-								exciting prizes and goodies
-							</p>
-							<a target="_blank" href="./competitions/index.html"
-								>Compete</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="face face1">
-						<div class="content">
-							<img
-								class="wit"
-								src="./images/events/workshop.png"
-							/>
-							<h3>Workshops</h3>
-						</div>
-					</div>
-					<div class="face face2">
-						<div class="content">
-							<p>
-								Explore and develop latest entrepreneurial and
-								technology skills to excel in this competitive
-								world through our Workshops
-							</p>
-							<a href="#">Coming soon..</a>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="face face1">
-						<div class="content">
-							<img
-								class="wit"
-								src="./images/events/innovation_expo.png"
-							/>
-							<h3>Innovation<br />Expo</h3>
-						</div>
-					</div>
-					<div class="face face2">
-						<div class="content">
-							<p>
-								An event in which you can showcase your
-								innovative project or ideas as exhibit and win
-								exciting prizes.
-							</p>
-							<a href="#events" onclick="register()"
-								>Register now</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="face face1">
-						<div class="content">
-							<img
-								class="wit"
-								src="./images/events/invest_up.png"
-							/>
-							<h3>Invest<br />Up</h3>
-						</div>
-					</div>
-					<div class="face face2">
-						<div class="content">
-							<p>
-								We present you Investors drive, a one stop
-								solution to all start-ups that are in need of
-								funding and mentoring.
-							</p>
-							<a
-								href="https://dare2compete.com/competition/investup-e-summit22-indian-institute-of-technology-iit-bhubaneswar-275231"
-								target="_blank"
-								>Register Now</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="face face1">
-						<div class="content">
-							<img
-								class="alreadyWhite"
-								src="./images/events/internfair.png"
-							/>
-							<h3>Internship<br />Fair</h3>
-						</div>
-					</div>
-					<div class="face face2">
-						<div class="content">
-							<p>
-								Are you looking for an internship and keen about
-								working in a startup? Then this internship fair
-								is for you.
-							</p>
-							<a href="#">Coming soon..</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- Events -->
+    <div class="events" id="events">
+      <h1 class="title" style="color: #f5e6f5">Events</h1>
+      <div class="eventcard" id="events">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img class="wit" src="./images/events/guest_talks.png" />
+              <h3>Guest Talks</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Hear from the experienced!! Learn what the industry experts want
+                to say. Dive into the entrepreneurial world with our 'Guest
+                Talks'
+              </p>
+              <a href="#">Coming soon..</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img class="wit" src="./images/events/competations.png" />
+              <h3>Competitions</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Experience the most stimulating competitions of E-Summit'22.
+                Outplay your competitors and win exciting prizes and goodies
+              </p>
+              <a target="_blank" href="./competitions/index.html">Compete</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img class="wit" src="./images/events/workshop.png" />
+              <h3>Workshops</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Explore and develop latest entrepreneurial and technology skills
+                to excel in this competitive world through our Workshops
+              </p>
+              <a href="#">Coming soon..</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img class="wit" src="./images/events/innovation_expo.png" />
+              <h3>Innovation<br />Expo</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                An event in which you can showcase your innovative project or
+                ideas as exhibit and win exciting prizes.
+              </p>
+              <a href="#events" onclick="register()">Register now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img class="wit" src="./images/events/invest_up.png" />
+              <h3>Invest<br />Up</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                We present you Investors drive, a one stop solution to all
+                start-ups that are in need of funding and mentoring.
+              </p>
+              <a
+                href="https://dare2compete.com/competition/investup-e-summit22-indian-institute-of-technology-iit-bhubaneswar-275231"
+                target="_blank"
+                >Register Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img class="alreadyWhite" src="./images/events/internfair.png" />
+              <h3>Internship<br />Fair</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Are you looking for an internship and keen about working in a
+                startup? Then this internship fair is for you.
+              </p>
+              <a href="#">Coming soon..</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Speakers -->
-		<div class="speakers" id="speakers">
-			<h1 class="title">Past Speakers</h1>
-			<div class="hero">
-				<div class="carousel">
-					<ul>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s11.jpg" />
-								<h5>
-									Shashank Randev<br />
-									<span>Founder VC at 100X.VC</span>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s10.jpg" />
-								<h5>
-									Sanjay Jesrani<br />
-									<span
-										>Founder & CEO, Go North Ventures</span
-									>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s9.jpg" />
-								<h5>
-									Vinayak Nath<br />
-									<span
-										>Serial Entrepreneur | TEDx
-										Speaker</span
-									>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s8.jpg" />
-								<h5>
-									Dr. Sivapriya Kirubakaran<br />
-									<span
-										>Associate Professor, IIT
-										Gandhinagar</span
-									>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s7.jpg" />
-								<h5>
-									Prof. Vivek Polshettiwar<br />
-									<span>Associate Professor, TIFR</span>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s6.jpg" />
-								<h5>
-									Raj Chowdhury<br />
-									<span
-										>Managing Director, HashCash
-										Consultants</span
-									>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s5.jpg" />
-								<h5>
-									Anil Lulla<br />
-									<span>CEO & Co-Founder BuyUcoin</span>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s4.jpg" />
-								<h5>
-									Shivam Thakral<br />
-									<span>CEO & Co-Founder BuyUcoin</span>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s3.jpg" />
-								<h5>
-									Sidharth Sogani<br />
-									<span>CEO - CREBACO Global Inc</span>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s2.jpg" />
-								<h5>
-									Mrs. Kiran Bedi<br />
-									<span style="line-height: 1px"
-										>First female IPS officer, Former
-										Lieutenant Governor of Puducherry</span
-									>
-								</h5>
-							</div>
-						</li>
-						<li>
-							<div class="contint">
-								<img src="./images/past_speakers/s1.jpg" />
-								<h5>
-									Mrs. Anisha Motwani<br />
-									<span
-										>Founder and Director, STROM the
-										NORM</span
-									>
-								</h5>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<script
-				src="https://code.jquery.com/jquery-3.6.0.min.js"
-				integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-				crossorigin="anonymous"
-			></script>
-			<script src="./gallery/jquery.flipster.min.js"></script>
-			<script>
-				$(".carousel").flipster({
-					style: "carousel",
-					spacing: -0.27,
-				});
+    <!-- Speakers -->
+    <div class="speakers" id="speakers">
+      <h1 class="title">Our Speakers</h1>
+      <div class="hero">
+        <div class="carousel">
+          <ul>
+            <li>
+              <div class="contint">
+                <img src="./images/Speakers//KarthikB.jpg" />
+                <h5>
+                  Karthik Balasubramanian<br />
+                  <span>Co-Founder KIP Foundation</span>
+                </h5>
+              </div>
+            </li>
+            <li>
+              <div class="contint">
+                <img src="./images/Speakers/Ankit-Ratan.jpg" />
+                <h5>
+                  Ankit Ratan<br />
+                  <span>Co Founder Signzys</span>
+                </h5>
+              </div>
+            </li>
+            <li>
+              <div class="contint">
+                <img src="./images/Speakers/Manhar-Garegrat.jpg" />
+                <h5>
+                  Manhar Garegrat<br />
+                  <span>Executive Director & Chief Of Staff COINDCX</span>
+                </h5>
+              </div>
+            </li>
+            <li>
+              <div class="contint">
+                <img src="./images/Speakers/Ashish-Anand.jpg" />
+                <h5>
+                  Ashish A<br />
+                  <span>"Founder & CEO Whrrl "</span>
+                </h5>
+              </div>
+            </li>
+            <li>
+              <div class="contint">
+                <img src="./images/Speakers/AtulyaB.jpg" />
+                <h5>
+                  Atulya B<br />
+                  <span>Co-Founder, BuyUcoin</span>
+                </h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script>
+      <script src="./gallery/jquery.flipster.min.js"></script>
+      <script>
+        $(".carousel").flipster({
+          style: "carousel",
+          spacing: -0.27,
+        });
 
-				function playVid() {
-					document.querySelector(".video-container").style.opacity =
-						"1";
-				}
-			</script>
-		</div>
+        function playVid() {
+          document.querySelector(".video-container").style.opacity = "1";
+        }
+      </script>
+    </div>
 
-		<div class="_modal">
-			<div class="alrt">
-				<h1 id="alrt-title">Innovation Expo</h1>
-				<div class="content">
-					<p id="alrt-content">
-						An event in which you can showcase your innovative
-						project or ideas as exhibit and win exciting prizes.
-						From a Project to a StartUp, the journey begins here!
-					</p>
-					<a
-						id="insider"
-						href="https://docs.google.com/forms/d/e/1FAIpQLScin06zZv0akT4EzDI2naAPGNTvlG7R69WqdMtyzbV6Nk4wUA/viewform?usp=sf_link"
-						target="_blank"
-						>Register as IITBBS student</a
-					>
-					<a
-						id="outsider"
-						href="https://dare2compete.com/o/1jo6Pif?lb=hT0lyb9"
-						target="_blank"
-						>Register from other college</a
-					>
-				</div>
-			</div>
-		</div>
-		<script>
-			function register() {
-				document.querySelector("._modal").style.display = "flex";
-				document.body.style.overflow = "hidden";
-			}
+    <div class="_modal">
+      <div class="alrt">
+        <h1 id="alrt-title">Innovation Expo</h1>
+        <div class="content">
+          <p id="alrt-content">
+            An event in which you can showcase your innovative project or ideas
+            as exhibit and win exciting prizes. From a Project to a StartUp, the
+            journey begins here!
+          </p>
+          <a
+            id="insider"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScin06zZv0akT4EzDI2naAPGNTvlG7R69WqdMtyzbV6Nk4wUA/viewform?usp=sf_link"
+            target="_blank"
+            >Register as IITBBS student</a
+          >
+          <a
+            id="outsider"
+            href="https://dare2compete.com/o/1jo6Pif?lb=hT0lyb9"
+            target="_blank"
+            >Register from other college</a
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      function register() {
+        document.querySelector("._modal").style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
 
-			function close(e) {
-				if (e.target.classList.contains("_modal")) {
-					document.querySelector("._modal").style.display = "none";
-					document.body.style.overflow = "scroll";
-				}
-			}
+      function close(e) {
+        if (e.target.classList.contains("_modal")) {
+          document.querySelector("._modal").style.display = "none";
+          document.body.style.overflow = "scroll";
+        }
+      }
 
-			document.querySelector("._modal").addEventListener("click", close);
-		</script>
-		<footer>
-			<h1>Our Sponsors</h1>
-			<div class="sponsors">
-					<div class="sponsor"></div>
-					<div class="sponsor"></div>
-					<div class="sponsor"></div>
-					<div class="sponsor"></div>
-					<div class="sponsor"></div>
-			</div>
-			<h1>Media Partners</h1>
-			<div class="msponsors">
-				<div class="mps"></div>
-				<div class="mps"></div>
-				<div class="mps"></div>
-				<div class="mps"></div>
-			</div>
-		</footer>
-	</body>
+      document.querySelector("._modal").addEventListener("click", close);
+    </script>
+    <footer>
+      <h1>Our Sponsors</h1>
+      <div class="sponsors">
+        <div class="sponsor"></div>
+        <div class="sponsor"></div>
+        <div class="sponsor"></div>
+        <div class="sponsor"></div>
+        <div class="sponsor"></div>
+      </div>
+      <h1>Media Partners</h1>
+      <div class="msponsors">
+        <div class="mps"></div>
+        <div class="mps"></div>
+        <div class="mps"></div>
+        <div class="mps"></div>
+      </div>
+    </footer>
+  </body>
 </html>
