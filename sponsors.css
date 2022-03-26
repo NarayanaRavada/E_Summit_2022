@@ -1,55 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 footer h1 {
-  text-decoration: none;
-  color: #ddd;
-  font-size: 2.2rem;
-  font-weight: 400;
+	text-decoration: none;
+	color: #ddd;
+	font-size: 2.2rem;
+	font-weight: 400;
 }
 
 footer h1:nth-child(1) {
-  font-size: 3rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
+	font-size: 3rem;
+	font-weight: 300;
+	margin-bottom: 3rem;
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    -135deg,
-    #434343 0%,
-    #000000 90%
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    -135deg,
-    #434343 0%,
-    #000000 90%
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #000000; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		-135deg,
+		#434343 0%,
+		#000000 90%
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		-135deg,
+		#434343 0%,
+		#000000 90%
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .sponsors {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5rem;
 }
 
 .sponsor {
-  width: 200px;
-  height: 120px;
-  background: #777;
-  margin: 1rem;
-  border-radius: 10px;
-  transition: transform 0.1s linear;
+	height: 120px;
+	background: white;
+	margin: 1rem;
+	transition: transform 0.1s linear;
+	border-radius: 10px;
 }
 
-.sponsor:nth-child(1) {
+.sponsor img {
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/* .sponsor:nth-child(1) {
   background: url("./images/sponsors/sbull.jpeg");
   background-size: cover;
   background-position: center;
@@ -82,108 +87,109 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .asponsor {
-  width: 350px;
-  height: 100px;
-  border-radius: 10px;
-  transition: transform 0.1s linear;
-  margin: 0.4rem;
-  background: url("./images/sponsors/msy.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 5rem;
+	width: 350px;
+	height: 100px;
+	border-radius: 10px;
+	transition: transform 0.1s linear;
+	margin: 0.4rem;
+	background: url("./images/sponsors/msy.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 5rem;
 }
 
 .msponsors {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0.8);
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0.8);
 }
 
 .mps {
-  width: 200px;
-  height: 140px;
-  background: #777;
-  margin: 1rem;
-  border-radius: 10px;
-  transition: transform 0.1s linear;
+	width: 200px;
+	height: 140px;
+	background: #777;
+	margin: 1rem;
+	border-radius: 10px;
+	transition: transform 0.1s linear;
 }
 
 .mps:nth-child(4) {
-  background: url("./images/sponsors/cas.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	background: url("./images/sponsors/cas.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .mps:nth-child(3) {
-  background: url("./images/sponsors/desient.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	background: url("./images/sponsors/desient.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .mps:nth-child(2) {
-  background: url("./images/sponsors/pragativadi.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	background: url("./images/sponsors/pragativadi.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .mps:nth-child(1) {
-  background: url("./images/sponsors/addzet.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	background: url("./images/sponsors/addzet.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .mps:hover,
 .sponsor:hover,
 .asponsor:hover {
-  transform: scale(1.09);
+	transform: scale(1.09);
 }
 
 @media only screen and (max-width: 500px) {
-  .msponsors {
-    margin: 0;
-  }
-  .mps {
-    margin: 0.1rem;
-    transform: scale(0.89);
-  }
-  .sponsors {
-    margin: 0;
-  }
-  .sponsor {
-    margin: 0rem;
-    transform: scale(0.85);
-  }
-  .asponsor {
-    margin: 0rem;
-    transform: scale(0.85);
-    margin-bottom: 2rem;
-  }
-  footer {
-    padding: 0;
-    padding-top: 2rem;
-  }
-  footer h1:first-child {
-    font-size: 2.5rem;
-    font-weight: 400;
-  }
-  .sponsor:hover {
-    transform: scale(0.87);
-  }
-  .asponsor:hover {
-    transform: scale(0.87);
-  }
-  .mps:hover {
-    transform: scale(0.9);
-  }
+	.msponsors {
+		margin: 0;
+	}
+	.mps {
+		margin: 0.1rem;
+		transform: scale(0.89);
+	}
+	.sponsors {
+		margin: 0;
+		padding-bottom: 4em;
+	}
+	.sponsor {
+		margin: 0rem;
+		transform: scale(0.85);
+	}
+	.asponsor {
+		margin: 0rem;
+		transform: scale(0.85);
+		margin-bottom: 2rem;
+	}
+	footer {
+		padding: 0;
+		padding-top: 2rem;
+	}
+	footer h1:first-child {
+		font-size: 2.5rem;
+		font-weight: 400;
+	}
+	.sponsor:hover {
+		transform: scale(0.87);
+	}
+	.asponsor:hover {
+		transform: scale(0.87);
+	}
+	.mps:hover {
+		transform: scale(0.9);
+	}
 }
