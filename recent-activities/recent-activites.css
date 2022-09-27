@@ -35,8 +35,8 @@
 
 .img-box {
   margin: 10px;
-  height: 400px;
-  width: 400px;
+  height: min(400px, 90%);
+  width: min(400px, 90%);
   overflow: hidden;
   display: inline-block;
   color: white;
