@@ -1,122 +1,145 @@
 .contnt {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .contnt p {
-	font-size: 1.1rem;
-	text-align: justify;
-	padding: 5rem;
-	padding-left: 0;
+  font-size: 1.1rem;
+  text-align: justify;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.contnt h1 {
+  margin-bottom: 30px;
+}
+
+.contnt p:last-child {
+  margin-bottom: 30px;
+  color: #444;
 }
 
 .theme h1 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	letter-spacing: 0;
-	line-height: 1.5em;
-	padding-bottom: 15px;
-	margin-right: 15px;
-	position: relative;
-	color: #333;
-	width: auto;
-	margin-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  margin-right: 15px;
+  position: relative;
+  width: auto;
+  margin-top: 5rem;
+}
+
+.theme h1 span {
+  font-size: 1.8rem;
 }
 .theme h1:after {
-	content: "";
-	position: absolute;
-	height: 5px;
-	width: min(400px, 100%);
-	left: 0;
-	bottom: 0;
-	background-color: #c50000;
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: min(400px, 100%);
+  left: 0;
+  bottom: 0;
+  background-color: #c50000;
 }
 .theme h1:before {
-	content: "Theme";
-	font-size: 2.3rem;
-	color: #111;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2px;
-	width: 33%;
-	background-color: #c50000;
-	display: flex;
-	flex-direction: column-reverse;
+  content: 'Theme';
+  font-size: 2rem;
+  color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 33%;
+  background-color: #c50000;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 #smb {
-	display: none;
+  display: none;
 }
 
 .theme-video {
-	position: relative;
-	width: 55vw;
+  position: relative;
+  width: 55vw;
 }
 .iframe-container {
-	position: relative;
-	background-color: #08042c;
-	width: 100%;
-	padding-bottom: 56.25%;
-	height: 0;
+  position: relative;
+  background-color: #08042c;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
 }
 .iframe-container iframe {
-	position: absolute;
-	z-index: 10;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1250px) {
-	.theme h1 {
-		font-size: 2rem;
-		margin-bottom: 2rem;
-		width: 100%;
-	}
+  .theme h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-	.theme {
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding-top: 2rem;
-		background-color: #ccc;
-	}
-	.theme-video {
-		width: 100%;
-	}
-	.theme h1 {
-		font-size: 1.8rem;
-		margin-bottom: 2rem;
-		text-align: center;
-		padding-bottom: 10px;
-	}
-	.theme h1:before {
-		width: 50%;
-		height: 2px;
-		font-size: 1.8rem;
-		margin-left: 25%;
-	}
+  .theme {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    background-color: #ccc;
+  }
+  .theme-video {
+    width: 100%;
+  }
+  .theme h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .theme h1 span {
+    font-size: 1.4rem;
+  }
+  .theme h1:before {
+    width: 50%;
+    height: 2px;
+    font-size: 1.8rem;
+    margin-left: 25%;
+  }
 
-	.theme h1:after {
-		width: 40%;
-		left: 30%;
-		height: 1px;
-	}
-	#smb {
-		display: block;
-	}
+  .theme h1:after {
+    width: 40%;
+    left: 30%;
+    height: 1px;
+  }
+  #smb {
+    display: block;
+  }
 
-	.contnt p {
-		padding: 0;
-		padding-top: 2rem;
-		padding-bottom: 5rem;
-	}
+  .contnt p {
+    font-size: 1rem;
+    padding: 0;
+  }
 
-	.contnt {
-		padding: 0;
-		width: 100%;
-	}
+  .contnt {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .theme h1 span {
+    font-size: 1rem;
+  }
+  .theme h1::before {
+    font-size: 1.4rem;
+  }
 }

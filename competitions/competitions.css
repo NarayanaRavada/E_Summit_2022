@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 a {
@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 4rem;
   color: #fff;
@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
 }
 
 .title h1:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 1px;
@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
 }
 
 .title h1:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -133,6 +133,11 @@ body::-webkit-scrollbar {
   transition: 0.3s linear 0.3s;
   color: #fff;
 }
+
+.layer .smaller {
+  font-size: 1.2rem;
+}
+
 .info {
   position: absolute;
   top: 15%;
@@ -161,7 +166,7 @@ body::-webkit-scrollbar {
 }
 
 .layer h3::after {
-  content: "";
+  content: '';
   width: 0%;
   height: 2px;
   background: #5fcaff;
