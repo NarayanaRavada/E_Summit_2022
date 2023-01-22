@@ -151,20 +151,12 @@
   border: 1px solid #333;
 }
 
-.eventcard .card:nth-child(2) .face.face2 .content a {
+.eventcard .card .face.face2 .content a {
   animation: shake 2s ease-in-out infinite;
 }
 
-.eventcard .card:nth-child(4) .face.face2 .content a {
-  animation: shake 2s ease-in-out infinite;
-}
-
-.eventcard .card:nth-child(5) .face.face2 .content a {
-  animation: shake 2s ease-in-out infinite;
-}
-
-.eventcard .card:nth-child(6) .face.face2 .content a {
-  animation: shake 2s ease-in-out infinite;
+.eventcard .card:nth-child(1) .face.face2 .content a {
+    animation: none;
 }
 
 @keyframes shake {
@@ -173,7 +165,7 @@
     transform: translateY(5px) scale(1);
   }
   60% {
-    transform: translateY(10px) scale(0.9);
+    transform: translateY(7px) scale(0.99);
     color: #111;
   }
 }

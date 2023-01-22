@@ -1,0 +1,108 @@
+<!DOCTYPE html>21
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>E-SUMMIT 2023</title>
+    <link rel="stylesheet" href="workshops.css" />
+    <link rel="icon" href="../images/es-logo.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../index.html#"><img src="../images/logo-e-summit-new.png" /></a>
+    </div>
+    <div class="title">
+      <h1>Workshops</h1>
+      <p>
+      </p>
+    </div>
+    <div class="box">
+      <div class="c-wrapper">
+        <div
+          class="card"
+          style="background-image: url('../images/workshops/ai_ml.png')"
+        >
+          <div class="layer">
+            <h3 class="ctitle">AI & ML</h3>
+            <div class="info">
+              <p>
+              Unlock the power of AI and ML through hands-on workshops and practical training
+              </p>
+              <button onclick="register(0)">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-wrapper">
+        <div
+          class="card"
+          style="background-image: url('../images/workshops/cloud_computing.jpeg')"
+        >
+          <div class="layer">
+            <h3 class="ctitle">Cloud Computing</h3>
+            <div class="info">
+              <p>
+              Join the workshop and discover the benefits and capabilities of cloud technology
+              </p>
+              <button onclick="register(1)">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-wrapper">
+        <div
+          class="card"
+          style="background-image: url('../images/workshops/product_management.webp')"
+        >
+          <div class="layer">
+            <h3 class="ctitle">Product Management</h3>
+            <div class="info">
+              <p>
+              Unlock the secrets to succesful product Management with our interactive workshop
+              </p>
+              <button onclick="register(2)">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="modal">
+      <div class="alrt">
+        <h1 id="alrt-title"></h1>
+        <div class="content">
+          <p id="alrt-content"></p>
+          <!--<a id="insider" href="#" target="_blank"-->
+          <a id="outsider" href="#" target="_blank">Register</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const links = [
+      'https://unstop.com/o/oPNankH?lb=Y1Cf6hw',
+      'https://unstop.com/o/dyzlr5I?lb=Y1Cf6hw',
+      'https://unstop.com/o/ZFfHo9k?lb=zxoWI5b',
+    ];
+    function register(key) {
+      const title = document.getElementsByClassName('ctitle')[key].innerText;
+      const content =
+        document.getElementsByClassName('info')[key].children[0].innerText;
+
+      document.getElementById('alrt-title').innerText = `${title}`;
+      document.getElementById('alrt-content').innerText = `${content}`;
+      //document.getElementById('insider').href = `${props.Insider}`;
+      document.getElementById('outsider').href = `${links[key]}`;
+      document.querySelector('.modal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close(e) {
+      if (e.target.classList.contains('modal')) {
+        document.querySelector('.modal').style.display = 'none';
+        document.body.style.overflow = 'scroll';
+      }
+    }
+
+    document.querySelector('.modal').addEventListener('click', close);
+  </script>
+</html>
