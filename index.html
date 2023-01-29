@@ -135,9 +135,9 @@
         <!--<div class="logo"><img src="./images/theme.png" /></div>-->
         <h1 class="new-logo">E-SUMMIT ' 23</h1>
         <div class="wrapper">
-          <a
+          <button
             class="cta"
-            href="https://unstop.com/festival/e-summit23-indian-institute-of-technology-iit-bhubaneswar-59634"
+            onClick="register('regis')"
             target="_blank"
           >
             <span>Register</span>
@@ -175,7 +175,7 @@
                 </g>
               </svg>
             </span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -534,42 +534,65 @@
 
     <div class="_modal">
       <div class="alrt">
-        <h1 id="alrt-title">Innovation Expo</h1>
+        <h1 id="alrt-title"></h1>
         <div class="content">
           <p id="alrt-content">
-            An event in which you can showcase your innovative project or ideas
-            as exhibit and win exciting prizes. From a Project to a StartUp, the
-            journey begins here!
           </p>
           <a
-            id="insider"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScin06zZv0akT4EzDI2naAPGNTvlG7R69WqdMtyzbV6Nk4wUA/viewform?usp=sf_link"
+            id="links-0"
+            href="#"
             target="_blank"
             >Register as IITBBS student</a
           >
           <a
-            id="outsider"
-            href="https://unstop.com/o/D25rpJ3?lb=hT0lyb9"
+            id="links-1"
+            href="#"
             target="_blank"
             >Register from other college</a
           >
+          <p id="foot-note"></p>
         </div>
       </div>
     </div>
     <script>
-      function register() {
-        document.querySelector('._modal').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-      }
-
-      function close(e) {
-        if (e.target.classList.contains('_modal')) {
-          document.querySelector('._modal').style.display = 'none';
-          document.body.style.overflow = 'scroll';
+        const modalData = {
+            regis: {
+                title: "E-SUMMIT 2023",
+                info: "",
+                links: [
+                    {
+                        lname: "E-Summit'23 Registration",
+                        link: "https://unstop.com/festival/e-summit23-indian-institute-of-technology-iit-bhubaneswar-59634",
+                    },
+                    {
+                        lname: "Contingent Registration",
+                        link: "https://drive.google.com/file/d/1RWS8jbnBrExiRhh1o3lfHTWFBCjxSY7f/view?usp=share_link",
+                    }
+                ],
+                note: "*contingent registration link is available at the end of the document",
+            },
         }
-      }
+        function register(item) {
+            const {title, info, links, note} = modalData[item];
+            document.querySelector('#alrt-title').innerText = title;
+            document.querySelector('#alrt-content').innerText = info;
+            links.forEach((el, idx) => {
+                document.querySelector(`#links-${idx}`).innerText = el.lname;
+                document.querySelector(`#links-${idx}`).href = el.link;
+            })
+            document.querySelector('#foot-note').innerText = note;
+            document.querySelector('._modal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
 
-      document.querySelector('._modal').addEventListener('click', close);
+        function close(e) {
+            if (e.target.classList.contains('_modal')) {
+                document.querySelector('._modal').style.display = 'none';
+                document.body.style.overflow = 'scroll';
+            }
+        }
+
+        document.querySelector('._modal').addEventListener('click', close);
     </script>
     <footer id="sponsors">
       <h1>Our Sponsors</h1>

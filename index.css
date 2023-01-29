@@ -347,6 +347,7 @@ h1 em {
   font-size: 3rem;
   padding: 1rem;
   border-bottom: 2px solid blue;
+  text-align: center;
 }
 
 .alrt p {
@@ -375,6 +376,11 @@ h1 em {
 
 .alrt .content a:hover {
   background-color: #a5e9f9;
+}
+
+#foot-note {
+    color: gray;
+    font-size: 12px;
 }
 
 .speakers {
