@@ -12,6 +12,24 @@ a {
   color: inherit;
 }
 
+.resume {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.insiders {
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.insider {
+    margin-top: 10px;
+}
+
+.resume #hello {
+    width: 200px;
+}
+
 .wrapper{
   position: relative;
   display: flex;
@@ -20,10 +38,10 @@ a {
 
 #hello {
   display: block;
-  width: 200px;
+  width: 300px;
   height: 40px;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 15px;
   font-family: sans-serif;
   text-decoration: none;
   color: #333;
@@ -80,6 +98,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* === HEADING STYLE === */
@@ -92,6 +111,7 @@ body::-webkit-scrollbar {
   font-size: 4rem;
   color: #fff;
   padding: 2rem;
+  text-transform: uppercase;
 }
 
 .title h1:after {
@@ -117,7 +137,8 @@ body::-webkit-scrollbar {
 
 .title p {
   font-size: 1.2rem;
-  color: #fff;
+  font-weight: 500;
+  color: #eee;
   padding: 3rem;
   width: 60%;
   text-align: justify;
@@ -292,7 +313,7 @@ button {
   height: 10vh;
   width: 100vw;
   padding: 1rem;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .navbar img {

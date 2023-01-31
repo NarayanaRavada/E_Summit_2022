@@ -397,7 +397,7 @@
                 An event in which you can showcase your innovative project or
                 ideas as exhibit and win exciting prizes.
               </p>
-              <a href="https://unstop.com/competition/innovation-expo-e-summit23-indian-institute-of-technology-iit-bhubaneswar-552628" target='_blank'>Register now</a>
+              <a onclick="register('innovationExpo')" target='_blank'>Register now</a>
             </div>
           </div>
         </div>
@@ -571,6 +571,21 @@
                 ],
                 note: "*contingent registration link is available at the end of the document",
             },
+            innovationExpo: {
+                title: "Innovation Expo",
+                info: "An event in which you can showcase your innovative project or ideas as exhibit and win exciting prizes.",
+                links: [
+                    {
+                        lname: "Register as IIT-BBS student",
+                        link: "https://forms.gle/5e45g8J92VuDfFrE6",
+                    },
+                    {
+                        lname: "Register from other College",
+                        link: "https://unstop.com/competition/innovation-expo-e-summit23-indian-institute-of-technology-iit-bhubaneswar-552628"
+                    }
+                ],
+                note: ""
+            }
         }
         function register(item) {
             const {title, info, links, note} = modalData[item];

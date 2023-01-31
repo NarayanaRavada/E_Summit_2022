@@ -35,7 +35,7 @@
                 into the shoes of a bidder and build your dream fantasy IPL team
                 that you always wanted to lift the coveted trophy.
               </p>
-              <button onclick="register(0)">Register</button>
+              <button onclick="register('ipl_auction')">Register</button>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
                 Epigramma is a tagline/slogan making competition of 2 rounds.
                 Round 1 is theme-based. Both rounds will be held online.
               </p>
-              <button onclick="register(1)">Register</button>
+              <button onclick="register('epigrama')">Register</button>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
                 designing competition of 2 rounds. Both rounds will be held
                 online.
               </p>
-              <button onclick="register(2)">Register</button>
+              <button onclick="register('insignia')">Register</button>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
                 really exciting rounds, Biz Quiz promises to be a challenging
                 test of your intellect!
               </p>
-              <button onclick="register(3)">Register</button>
+              <button onclick="register('biz_quiz')">Register</button>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
                 for laughter. Let's boost your hidden talent and showcase your
                 meme-making skills.
               </p>
-              <button onclick="register(4)">Register</button>
+              <button onclick="register('meme')">Register</button>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@
                 participants to develop their entrepreneurial skills and
                 knowledge for developing their business model.
               </p>
-              <button onclick="register(5)">Register</button>
+              <button onclick="register('bplan')">Register</button>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@
                 have the ability to analyse and come up with a solution to a
                 real-time problem innovatively.
               </p>
-              <button onclick="register(6)">Register</button>
+              <button onclick="register('enigma')">Register</button>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@
                 E-Summit is a virtual crypto trading competition, of two rounds
                 held completely online
               </p>
-              <button onclick="register(7)">Register</button>
+              <button onclick="register('bit_bang')">Register</button>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@
                 To bring out the your marketing acumen, E-Summit is here with a
                 new addition, Marcatus - The Marketing competition.
               </p>
-              <button onclick="register(8)">Register</button>
+              <button onclick="register('marcatus')">Register</button>
             </div>
           </div>
         </div>
@@ -192,44 +192,160 @@
         <h1 id="alrt-title"></h1>
         <div class="content">
           <p id="alrt-content"></p>
-          <!--<a id="insider" href="#" target="_blank"-->
-          <a id="outsider" href="#" target="_blank">Register</a>
+          <a id="links-0" href="#" target="_blank">Register as IIT-BBS student</a>
+          <a id="links-1" href="#" target="_blank">Register from other college</a>
         </div>
       </div>
     </div>
   </body>
   <script>
-    const links = [
-      'https://unstop.com/competition/ipl-auction-e-summit23-indian-institute-of-technology-iit-bhubaneswar-583644',
-      'https://unstop.com/festival/e-summit23-indian-institute-of-technology-iit-bhubaneswar-59634',
-      'https://unstop.com/festival/e-summit23-indian-institute-of-technology-iit-bhubaneswar-59634',
-      'https://unstop.com/quiz/biz-quiz-e-summit23-indian-institute-of-technology-iit-bhubaneswar-583702',
-      'https://unstop.com/creative-cultural-event/meme-making-competition-e-summit23-indian-institute-of-technology-iit-bhubaneswar-584148',
-      'https://unstop.com/competition/b-plan-e-summit23-indian-institute-of-technology-iit-bhubaneswar-584169',
-      'https://unstop.com/competition/enigma-e-summit23-indian-institute-of-technology-iit-bhubaneswar-583706',
-      'https://unstop.com/competition/bit-bang-e-summit23-indian-institute-of-technology-iit-bhubaneswar-586239',
-      'https://unstop.com/competition/marcatus-e-summit23-indian-institute-of-technology-iit-bhubaneswar-583703',
-    ];
-    function register(key) {
-      const title = document.getElementsByClassName('ctitle')[key].innerText;
-      const content =
-        document.getElementsByClassName('info')[key].children[0].innerText;
-
-      document.getElementById('alrt-title').innerText = `${title}`;
-      document.getElementById('alrt-content').innerText = `${content}`;
-      //document.getElementById('insider').href = `${props.Insider}`;
-      document.getElementById('outsider').href = `${links[key]}`;
-      document.querySelector('.modal').style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-    }
-
-    function close(e) {
-      if (e.target.classList.contains('modal')) {
-        document.querySelector('.modal').style.display = 'none';
-        document.body.style.overflow = 'scroll';
+      const modalData = {
+          ipl_auction: {
+              title: "IPL Auction",
+              info: "Welcome to the thrill of a live IPL Auction!! Put yourselves into the shoes of a bidder and build your dream fantasy IPL team that you always wanted to lift the coveted trophy.",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: "https://forms.gle/HFMxKvEbCcnBANpV6"
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/competition/ipl-auction-e-summit23-indian-institute-of-technology-iit-bhubaneswar-583644",
+                  }
+              ]
+          }, 
+          epigrama: {
+              title: "Epigramma",
+              info: " Epigramma is a tagline/slogan making competition of 2 rounds. Round 1 is theme-based. Both rounds will be held online.",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: ""
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/festival/e-summit23-indian-institute-of-technology-iit-bhubaneswar-59634",
+                  }
+              ]
+          },
+          insignia: {
+              title: "Insignia",
+              info: "E SUMMIT’23 is here to announce a Insignia. This is a logo designing competition of 2 rounds. Both rounds will be held online.",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: ""
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/festival/e-summit23-indian-institute-of-technology-iit-bhubaneswar-59634",
+                  }
+              ]
+          },
+          biz_quiz: {
+              title: "Biz Quiz",
+              info: "This year esummit is before you with its Biz Quiz to take you through an enchanting journey to the world of business. With a combination of mind blogging questions, core concepts and some really exciting rounds.",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: "https://forms.gle/DarXHwBW7erDQXds7"
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/quiz/biz-quiz-e-summit23-indian-institute-of-technology-iit-bhubaneswar-583702",
+                  }
+              ]
+          },
+          meme: {
+              title: "Meme Making competition",
+              info: "Now it's time to invoke the memer inside you and be the reason for laughter. Let's boost your hidden talent and showcase your meme-making skills.",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: ""
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/creative-cultural-event/meme-making-competition-e-summit23-indian-institute-of-technology-iit-bhubaneswar-584148",
+                  }
+              ]
+          },
+          bplan: {
+              title: "B-Plan",
+              info: "B-Plan is a Business Plan Making competition designed to encourage new innovative business venture plan and allowing the participants to develop their entrepreneurial skills and knowledge for developing their business model.",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: "https://forms.gle/q8Hmc2k23ppyjWNy9"
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/competition/b-plan-e-summit23-indian-institute-of-technology-iit-bhubaneswar-584169",
+                  }
+              ]
+          },
+          enigma: {
+              title: "Enigma",
+              info: "E-Summit’23 IIT Bhubaneswar presents you with Enigma, the case challenge competition. This is the competition for those who have the ability to analyse and come up with a solution to a real-time problem innovatively.",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: "https://forms.gle/R2xt4oEximjuc5Xh9"
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/competition/enigma-e-summit23-indian-institute-of-technology-iit-bhubaneswar-583706",
+                  }
+              ]
+          },
+          bit_bang: {
+              title: "Bit Bang",
+              info: "For all the crypto lovers out there, Bit Bang, a new addition to E-Summit is a virtual crypto trading competition, of two rounds held completely online",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: ""
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/competition/bit-bang-e-summit23-indian-institute-of-technology-iit-bhubaneswar-586239",
+                  }
+              ]
+          },
+          marcatus: {
+              title: "Marcatus",
+              info: "To bring out the your marketing acumen, E-Summit is here with a new addition, Marcatus - The Marketing competition.",
+              links: [
+                  {
+                      lname: "Register as IIT-BBS student",
+                      link: "https://forms.gle/ZnUofEwFFn1vD85Q7"
+                  }, 
+                  {
+                      lname: "Register from other college",
+                      link: "https://unstop.com/competition/marcatus-e-summit23-indian-institute-of-technology-iit-bhubaneswar-583703",
+                  }
+              ]
+          },
       }
-    }
+      function register(item) {
+          const {title, info, links} = modalData[item];
+          document.querySelector('#alrt-title').innerText = title;
+          document.querySelector('#alrt-content').innerText = info;
+          links.forEach((el, idx) => {
+              document.querySelector(`#links-${idx}`).innerText = el.lname;
+              document.querySelector(`#links-${idx}`).href = el.link;
+          })
+          document.querySelector('.modal').style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+      }
 
-    document.querySelector('.modal').addEventListener('click', close);
+      function close(e) {
+          if (e.target.classList.contains('modal')) {
+              document.querySelector('.modal').style.display = 'none';
+              document.body.style.overflow = 'scroll';
+          }
+      }
+
+      document.querySelector('.modal').addEventListener('click', close);
   </script>
 </html>
